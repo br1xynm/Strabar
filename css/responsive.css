@@ -1,0 +1,154 @@
+/* ==========================================================================
+   STRABAR — Responsive overrides (mobile-first: base styles live in style.css)
+   Breakpoints: 640 (large phone), 900 (tablet), 1100 (desktop), 1400 (large desktop)
+   ========================================================================== */
+
+/* -------- 640px: large phone / small tablet -------- */
+@media (min-width: 640px) {
+  .value-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .city-stats {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .demo-tabs {
+    max-width: 420px;
+    margin-inline: auto;
+  }
+}
+
+/* -------- 900px: tablet / nav switches to desktop pattern -------- */
+@media (min-width: 900px) {
+  .nav-desktop {
+    display: block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .hero .container {
+    grid-template-columns: 1.05fr 0.95fr;
+  }
+
+  .hero-cta,
+  .hero-meta {
+    justify-content: flex-start;
+  }
+
+  .value-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .steps {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .steps-connector {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 60%;
+    width: 100%;
+    height: 2px;
+    background: var(--color-line);
+    z-index: -1;
+  }
+
+  .city-panel {
+    grid-template-columns: 1.4fr 1fr;
+  }
+
+  .city-stats {
+    grid-template-columns: repeat(2, 1fr);
+    align-content: start;
+  }
+
+  .community-feed {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .demo-body {
+    grid-template-columns: 1fr;
+  }
+
+  .demo-panel[data-panel="track"] {
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+  }
+
+  .demo-panel[data-panel="explore"] {
+    grid-template-columns: 0.7fr 1.3fr;
+    align-items: start;
+  }
+
+  .route-detail-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .footer-bottom {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/* -------- 1100px: desktop -------- */
+@media (min-width: 1100px) {
+  :root {
+    --header-h: 80px;
+  }
+
+  .section {
+    padding-block: 7rem;
+  }
+
+  .hero {
+    padding-top: calc(var(--header-h) + 5rem);
+  }
+
+  .showcase-phones .phone:nth-child(1) {
+    transform: translateX(60px) rotate(-8deg) scale(0.9);
+  }
+
+  .showcase-phones .phone:nth-child(3) {
+    transform: translateX(-60px) rotate(8deg) scale(0.9);
+  }
+
+  .footer-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* -------- 1400px: large desktop -------- */
+@media (min-width: 1400px) {
+  .container {
+    padding-inline: var(--space-lg);
+  }
+}
+
+/* -------- Small phone safety (below 380px) -------- */
+@media (max-width: 380px) {
+  .phone-lg {
+    width: 230px;
+    height: 470px;
+  }
+
+  .hero-cta .btn {
+    width: 100%;
+  }
+}
