@@ -8,8 +8,27 @@
       name="description"
       content="Strabar is a social app for tracking your night out: record your route, log the bars you visit, and discover the routes of others. Try the interactive demo."
     />
-    <meta name="theme-color" content="#FBF8F3" />
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath d='M24 4C14.6 4 7 11.6 7 21c0 13 17 23 17 23s17-10 17-23C41 11.6 33.4 4 24 4z' fill='%23FF5A2B'/%3E%3Cpath d='M17 15h11a1 1 0 0 1 1 1v9a3 3 0 0 1-3 3h-7a3 3 0 0 1-3-3v-9a1 1 0 0 1 1-1z' fill='%23fff'/%3E%3C/svg%3E" />
+    <meta name="theme-color" content="#FAF6EE" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath d='M13,7 L35,7 Q40,7 40,12 L40,23 L26,42 Q24,45 22,42 L8,23 L8,12 Q8,7 13,7 Z' fill='none' stroke='%231C130F' stroke-width='5' stroke-linejoin='round' stroke-linecap='round'/%3E%3Cpath d='M11,22 L37,22 L25,39 Q24,41 23,39 Z' fill='%23FF4B2E'/%3E%3C/svg%3E" />
+
+    <!-- Open Graph / social sharing preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Strabar" />
+    <meta property="og:title" content="Strabar — Your night. Your route." />
+    <meta
+      property="og:description"
+      content="Track your route, log the bars you visit, and discover other people's routes. Try the interactive demo."
+    />
+    <meta property="og:image" content="assets/images/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Strabar — Your night. Your route." />
+    <meta
+      name="twitter:description"
+      content="Track your route, log the bars you visit, and discover other people's routes. Try the interactive demo."
+    />
+    <meta name="twitter:image" content="assets/images/og-image.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,17 +43,25 @@
     <svg style="display: none" aria-hidden="true">
       <symbol id="icon-logo" viewBox="0 0 48 48">
         <path
-          d="M24 4C14.6 4 7 11.6 7 21c0 13 17 23 17 23s17-10 17-23C41 11.6 33.4 4 24 4z"
-          fill="#FF5A2B"
-          stroke="none"
+          d="M13,7 L35,7 Q40,7 40,12 L40,23 L26,42 Q24,45 22,42 L8,23 L8,12 Q8,7 13,7 Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="5"
+          stroke-linejoin="round"
+          stroke-linecap="round"
         />
+        <path d="M11,22 L37,22 L25,39 Q24,41 23,39 Z" fill="var(--color-primary)" stroke="none" />
+      </symbol>
+      <symbol id="icon-logo-mono" viewBox="0 0 48 48">
         <path
-          d="M17 15h11a1 1 0 0 1 1 1v9a3 3 0 0 1-3 3h-7a3 3 0 0 1-3-3v-9a1 1 0 0 1 1-1z"
-          fill="#FFFFFF"
-          stroke="none"
+          d="M13,7 L35,7 Q40,7 40,12 L40,23 L26,42 Q24,45 22,42 L8,23 L8,12 Q8,7 13,7 Z"
+          fill="none"
+          stroke="#ffffff"
+          stroke-width="5"
+          stroke-linejoin="round"
+          stroke-linecap="round"
         />
-        <path d="M29 18h2.4a2.4 2.4 0 0 1 0 4.8H29" fill="none" stroke="#FFFFFF" stroke-width="1.6" />
-        <line x1="17" y1="18.2" x2="29" y2="18.2" stroke="#FF5A2B" stroke-width="1.3" />
+        <path d="M11,22 L37,22 L25,39 Q24,41 23,39 Z" fill="#ffffff" stroke="none" />
       </symbol>
       <symbol id="icon-chevron-down" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9" /></symbol>
       <symbol id="icon-route" viewBox="0 0 24 24">
@@ -451,7 +478,7 @@
                 <div class="phone-screen" style="background: var(--color-dark)">
                   <div class="phone-body" style="padding-top: 24px">
                     <div class="phone-share">
-                      <svg class="icon pin-icon" style="stroke: #fff"><use href="#icon-beer" /></svg>
+                      <svg class="icon pin-icon"><use href="#icon-logo-mono" /></svg>
                       <strong>6</strong><span>BEERS</span>
                       <strong style="font-size: 1rem; margin-top: 8px">3.4 km</strong><span>DISTANCE</span>
                       <div class="share-word">STRABAR</div>
@@ -508,7 +535,7 @@
                         </div>
                         <div data-demo-screen="finished" hidden>
                           <div class="phone-share">
-                            <svg class="icon pin-icon" style="stroke: #fff"><use href="#icon-beer" /></svg>
+                            <svg class="icon pin-icon"><use href="#icon-logo-mono" /></svg>
                             <strong data-demo-out-beers>0</strong><span>BEERS</span>
                             <strong style="font-size: 1rem; margin-top: 8px" data-demo-out-distance>0.00 km</strong><span>DISTANCE</span>
                             <div class="share-word">STRABAR</div>
@@ -592,6 +619,9 @@
               <span class="brand-word">Strabar</span>
             </a>
             <p data-i18n="footer.tagline">Track your night. Discover your city.</p>
+            <p class="footer-contact">
+              <span data-i18n="footer.contact">Contact</span>: <a href="mailto:guillermo.strabar@gmail.com">guillermo.strabar@gmail.com</a>
+            </p>
           </div>
           <div class="footer-cols">
             <div class="footer-col">

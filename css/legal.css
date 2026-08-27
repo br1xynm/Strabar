@@ -198,6 +198,16 @@
   color: var(--color-ink);
 }
 
+.legal-doc a {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.legal-doc a:hover {
+  color: var(--color-primary);
+}
+
 .placeholder {
   background: var(--color-primary-tint);
   color: var(--color-primary-dark);

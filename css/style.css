@@ -6,23 +6,23 @@
 
 /* -------------------- Design tokens -------------------- */
 :root {
-  /* Brand colors — warm, orange-forward, energetic (Strava-adjacent, not identical) */
-  --color-primary: #ff5a2b;
-  --color-primary-dark: #e2431a;
-  --color-primary-light: #ffb199;
-  --color-primary-tint: #fff1ea;
+  /* Brand colors — 2026 rebrand: vivid red-orange + warm near-black */
+  --color-primary: #ff4b2e;
+  --color-primary-dark: #e1381c;
+  --color-primary-light: #ffb49e;
+  --color-primary-tint: #fff0ea;
 
-  --color-ink: #14151a;
-  --color-ink-soft: #52545e;
-  --color-ink-faint: #8b8d97;
+  --color-ink: #1c130f;
+  --color-ink-soft: #5a4c43;
+  --color-ink-faint: #948a7e;
 
-  --color-bg: #fbf8f3;
-  --color-bg-alt: #f2ede2;
+  --color-bg: #faf6ee;
+  --color-bg-alt: #f1e9da;
   --color-surface: #ffffff;
-  --color-dark: #101114;
-  --color-dark-surface: #1b1c21;
+  --color-dark: #16100c;
+  --color-dark-surface: #211812;
 
-  --color-line: rgba(20, 21, 26, 0.1);
+  --color-line: rgba(28, 19, 15, 0.1);
   --color-line-dark: rgba(255, 255, 255, 0.12);
 
   --color-sage: #b9c9ae;
@@ -59,10 +59,10 @@
   --radius-pill: 999px;
 
   /* Shadows */
-  --shadow-sm: 0 2px 8px rgba(20, 21, 26, 0.06);
-  --shadow-md: 0 12px 32px rgba(20, 21, 26, 0.1);
-  --shadow-lg: 0 24px 60px rgba(20, 21, 26, 0.16);
-  --shadow-primary: 0 14px 30px rgba(255, 90, 43, 0.32);
+  --shadow-sm: 0 2px 8px rgba(28, 19, 15, 0.06);
+  --shadow-md: 0 12px 32px rgba(28, 19, 15, 0.1);
+  --shadow-lg: 0 24px 60px rgba(28, 19, 15, 0.16);
+  --shadow-primary: 0 14px 30px rgba(255, 75, 46, 0.32);
 
   /* Layout */
   --container-max: 1240px;
@@ -308,7 +308,7 @@ h4 {
 
 .btn-primary:hover {
   background: var(--color-primary-dark);
-  box-shadow: 0 18px 36px rgba(255, 90, 43, 0.4);
+  box-shadow: 0 18px 36px rgba(255, 75, 46, 0.4);
   transform: translateY(-2px);
 }
 
@@ -415,9 +415,9 @@ h4 {
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 1.25rem;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
 }
 
 .brand-mark {
@@ -1711,7 +1711,7 @@ body.nav-open .cookie-banner {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(60% 80% at 50% 0%, rgba(255, 90, 43, 0.25), transparent 70%);
+  background: radial-gradient(60% 80% at 50% 0%, rgba(255, 75, 46, 0.25), transparent 70%);
 }
 
 .final-cta .container {
@@ -1757,6 +1757,21 @@ body.nav-open .cookie-banner {
   margin-top: var(--space-sm);
   max-width: 38ch;
   font-size: 0.9rem;
+}
+
+.footer-contact {
+  margin-top: 0.6rem !important;
+}
+
+.footer-contact a {
+  text-decoration: underline;
+  text-decoration-color: var(--color-line-dark);
+  text-underline-offset: 3px;
+  transition: color var(--dur-fast) var(--ease);
+}
+
+.footer-contact a:hover {
+  color: #fff;
 }
 
 .footer-cols {
