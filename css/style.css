@@ -916,12 +916,11 @@ body.nav-open .cookie-banner {
 
 .phone-map .pin {
   position: absolute;
-  width: 16px;
-  height: 16px;
-  background: var(--color-primary);
-  border-radius: 50% 50% 50% 0;
-  transform: rotate(-45deg);
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  width: 13px;
+  height: 15px;
+  color: #fff;
+  transform: translate(-50%, -88%);
+  filter: drop-shadow(0 2px 3px rgba(20, 15, 10, 0.35));
 }
 
 .phone-body > [data-demo-screen] {
@@ -1249,17 +1248,16 @@ body.nav-open .cookie-banner {
 
 .city-map .map-pin {
   cursor: pointer;
+  color: #fff;
 }
 
-.city-map .map-pin circle {
-  fill: var(--color-surface);
-  stroke: var(--color-primary);
-  stroke-width: 2.5;
+.city-map .map-pin use {
+  filter: drop-shadow(0 2px 3px rgba(20, 15, 10, 0.35));
+  transition: color var(--dur-fast) var(--ease);
 }
 
-.city-map .map-pin.is-hot circle {
-  fill: var(--color-primary);
-  stroke: var(--color-primary-dark);
+.city-map .map-pin.is-hot {
+  color: var(--color-primary-dark);
 }
 
 .city-legend {

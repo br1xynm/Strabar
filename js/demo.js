@@ -158,10 +158,15 @@
     renderTrackOutputs();
 
     if (mapEl) {
-      const pin = document.createElement("span");
-      pin.className = "pin";
+      const SVG_NS = "http://www.w3.org/2000/svg";
+      const pin = document.createElementNS(SVG_NS, "svg");
+      pin.setAttribute("class", "pin");
+      pin.setAttribute("viewBox", "0 0 48 48");
       pin.style.top = PIN_POSITIONS[idx % PIN_POSITIONS.length].top;
       pin.style.left = PIN_POSITIONS[idx % PIN_POSITIONS.length].left;
+      const use = document.createElementNS(SVG_NS, "use");
+      use.setAttribute("href", "#icon-logo");
+      pin.appendChild(use);
       mapEl.appendChild(pin);
     }
 
