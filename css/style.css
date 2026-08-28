@@ -1759,21 +1759,6 @@ body.nav-open .cookie-banner {
   font-size: 0.9rem;
 }
 
-.footer-contact {
-  margin-top: 0.6rem !important;
-}
-
-.footer-contact a {
-  text-decoration: underline;
-  text-decoration-color: var(--color-line-dark);
-  text-underline-offset: 3px;
-  transition: color var(--dur-fast) var(--ease);
-}
-
-.footer-contact a:hover {
-  color: #fff;
-}
-
 .footer-cols {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

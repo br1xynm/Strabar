@@ -136,7 +136,6 @@
       "final.cta": "Probar la demo ahora",
 
       "footer.tagline": "Registra tu noche. Descubre tu ciudad. Compártela con quien quieras.",
-      "footer.contact": "Contacto",
       "footer.product": "Producto",
       "footer.legal": "Legal",
       "footer.language": "Idioma",
@@ -308,7 +307,6 @@
       "final.cta": "Prova la demo ara",
 
       "footer.tagline": "Registra la teva nit. Descobreix la teva ciutat. Comparteix-la amb qui vulguis.",
-      "footer.contact": "Contacte",
       "footer.product": "Producte",
       "footer.legal": "Legal",
       "footer.language": "Idioma",
@@ -480,7 +478,6 @@
       "final.cta": "Try the demo now",
 
       "footer.tagline": "Track your night. Discover your city. Share it with whoever you want.",
-      "footer.contact": "Contact",
       "footer.product": "Product",
       "footer.legal": "Legal",
       "footer.language": "Language",
