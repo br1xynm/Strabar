@@ -95,6 +95,24 @@
       <symbol id="icon-compass" viewBox="0 0 24 24">
         <circle cx="12" cy="12" r="10" /><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
       </symbol>
+      <symbol id="icon-star" viewBox="0 0 24 24">
+        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+      </symbol>
+      <symbol id="icon-message" viewBox="0 0 24 24">
+        <path
+          d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+        />
+      </symbol>
+      <symbol id="icon-camera" viewBox="0 0 24 24">
+        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+        <circle cx="12" cy="13" r="4" />
+      </symbol>
+      <symbol id="icon-sliders" viewBox="0 0 24 24">
+        <line x1="4" y1="21" x2="4" y2="14" /><line x1="4" y1="10" x2="4" y2="3" />
+        <line x1="12" y1="21" x2="12" y2="12" /><line x1="12" y1="8" x2="12" y2="3" />
+        <line x1="20" y1="21" x2="20" y2="16" /><line x1="20" y1="12" x2="20" y2="3" />
+        <line x1="1" y1="14" x2="7" y2="14" /><line x1="9" y1="8" x2="15" y2="8" /><line x1="17" y1="16" x2="23" y2="16" />
+      </symbol>
     </svg>
 
     <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to main content</a>
@@ -558,25 +576,99 @@
               <!-- PANEL: Explore routes -->
               <div class="demo-panel" data-panel="explore">
                 <p class="section-lede" data-i18n="demo.exploreLede" style="margin-bottom: 0.5rem">
-                  Pick a sample popular route and see its stops.
+                  Browse public routes, filter them, and see them drawn on the map.
                 </p>
-                <div class="route-picker" data-route-picker>
-                  <button class="route-chip is-active" data-route="gothic">Gothic Quarter Night</button>
-                  <button class="route-chip" data-route="poblenou">Poblenou After Dark</button>
-                  <button class="route-chip" data-route="gracia">Gràcia Discovery</button>
-                </div>
-                <div class="route-detail-grid">
-                  <div>
-                    <h3 data-route-title style="font-size: 1.15rem; margin-bottom: 0.75rem">Gothic Quarter Night</h3>
-                    <div class="city-stats" style="grid-template-columns: repeat(3, 1fr)">
-                      <div class="stat-card"><strong data-route-distance>3.1 km</strong><span data-i18n="demo.statDistance">Distance</span></div>
-                      <div class="stat-card"><strong data-route-duration>48 min</strong><span data-i18n="demo.statTime">Time</span></div>
-                      <div class="stat-card"><strong data-route-beers>5</strong><span data-i18n="demo.statBeers">Beers</span></div>
+                <div class="explore-layout">
+                  <aside class="explore-sidebar">
+                    <div class="explore-filters">
+                      <div class="explore-filter">
+                        <label data-i18n="demo.exploreFilterNeighborhood">Neighbourhood</label>
+                        <select data-explore-filter="neighborhood">
+                          <option value="all" data-i18n="demo.exploreFilterAll">All</option>
+                          <option value="Gothic Quarter">Gothic Quarter</option>
+                          <option value="Poblenou">Poblenou</option>
+                          <option value="Gràcia">Gràcia</option>
+                        </select>
+                      </div>
+                      <div class="explore-filter">
+                        <label data-i18n="demo.exploreFilterDistance">Distance</label>
+                        <select data-explore-filter="distance">
+                          <option value="all" data-i18n="demo.exploreFilterAll">All</option>
+                          <option value="short" data-i18n="demo.exploreFilterDistShort">Short (&lt;3 km)</option>
+                          <option value="medium" data-i18n="demo.exploreFilterDistMedium">Medium (3–5 km)</option>
+                          <option value="long" data-i18n="demo.exploreFilterDistLong">Long (&gt;5 km)</option>
+                        </select>
+                      </div>
+                      <div class="explore-filter">
+                        <label data-i18n="demo.exploreFilterRating">Rating</label>
+                        <select data-explore-filter="rating">
+                          <option value="all" data-i18n="demo.exploreFilterAll">All</option>
+                          <option value="4.5" data-i18n="demo.exploreFilterRating45">4.5 &amp; up</option>
+                          <option value="4" data-i18n="demo.exploreFilterRating40">4.0 &amp; up</option>
+                        </select>
+                      </div>
+                      <div class="explore-filter">
+                        <label
+                          ><svg class="icon" style="width: 0.9em; height: 0.9em"><use href="#icon-sliders" /></svg>
+                          <span data-i18n="demo.exploreSort">Sort by</span></label
+                        >
+                        <select data-explore-filter="sort">
+                          <option value="top" data-i18n="demo.exploreSortTop">Top rated</option>
+                          <option value="comments" data-i18n="demo.exploreSortComments">Most commented</option>
+                          <option value="short" data-i18n="demo.exploreSortShort">Shortest</option>
+                          <option value="long" data-i18n="demo.exploreSortLong">Longest</option>
+                        </select>
+                      </div>
                     </div>
-                  </div>
-                  <div>
-                    <h4 style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-ink-faint); margin-bottom: 0.5rem" data-i18n="demo.stopsTitle">Route stops</h4>
-                    <ul class="route-stops-list" data-route-stops></ul>
+                    <ul class="explore-route-list" data-explore-list></ul>
+                    <p class="explore-no-results" data-explore-empty data-i18n="demo.exploreNoResults" hidden>
+                      No routes match these filters.
+                    </p>
+                  </aside>
+
+                  <div class="explore-main">
+                    <div class="explore-map city-map">
+                      <svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                        <path
+                          class="map-park"
+                          d="M25,15 C70,0 125,20 128,55 C131,90 90,115 55,105 C20,95 5,60 15,35 C18,27 20,20 25,15 Z"
+                        />
+                        <path class="map-water" d="M600,270 C560,258 503,284 489,320 C477,350 495,382 520,400 L600,400 Z" />
+                        <g>
+                          <line class="street-minor" x1="70" y1="0" x2="70" y2="400" />
+                          <line class="street-minor" x1="160" y1="0" x2="160" y2="400" />
+                          <line class="street-minor" x1="380" y1="0" x2="380" y2="400" />
+                          <line class="street-minor" x1="470" y1="0" x2="470" y2="400" />
+                          <line class="street-minor" x1="560" y1="0" x2="560" y2="400" />
+                          <line class="street-minor" x1="0" y1="60" x2="600" y2="60" />
+                          <line class="street-minor" x1="0" y1="150" x2="600" y2="150" />
+                          <line class="street-minor" x1="0" y1="310" x2="600" y2="310" />
+                          <line class="street-minor" x1="0" y1="380" x2="600" y2="380" />
+                          <line class="street-major" x1="270" y1="0" x2="270" y2="400" />
+                          <line class="street-major" x1="0" y1="230" x2="600" y2="230" />
+                        </g>
+                        <path class="route-path-casing" pathLength="100" data-explore-path-casing d="" />
+                        <path class="route-path" pathLength="100" data-explore-path d="" />
+                        <g data-explore-pins></g>
+                      </svg>
+                    </div>
+
+                    <div class="explore-detail" data-explore-detail>
+                      <div class="explore-detail-head">
+                        <div>
+                          <h3 data-explore-title style="font-size: 1.15rem"></h3>
+                          <span class="explore-detail-meta" data-explore-meta></span>
+                        </div>
+                        <div class="explore-rating" data-explore-rating></div>
+                      </div>
+                      <p class="explore-detail-desc" data-explore-description></p>
+                      <div class="explore-photos" data-explore-photos></div>
+                      <h4 class="explore-subheading">
+                        <svg class="icon"><use href="#icon-message" /></svg>
+                        <span data-i18n="demo.exploreCommentsTitle">Comments</span>
+                      </h4>
+                      <ul class="explore-comments" data-explore-comments></ul>
+                    </div>
                   </div>
                 </div>
               </div>

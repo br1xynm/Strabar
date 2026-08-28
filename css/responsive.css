@@ -25,6 +25,10 @@
     max-width: 420px;
     margin-inline: auto;
   }
+
+  .explore-filters {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* -------- 900px: tablet / nav switches to desktop pattern -------- */
@@ -87,13 +91,9 @@
     align-items: center;
   }
 
-  .demo-panel[data-panel="explore"] {
-    grid-template-columns: 0.7fr 1.3fr;
+  .explore-layout {
+    grid-template-columns: minmax(240px, 1fr) minmax(0, 4fr);
     align-items: start;
-  }
-
-  .route-detail-grid {
-    grid-template-columns: 1fr 1fr;
   }
 
   .footer-top {
