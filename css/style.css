@@ -916,9 +916,9 @@ body.nav-open .cookie-banner {
 
 .phone-map .pin {
   position: absolute;
-  width: 13px;
-  height: 15px;
-  color: #fff;
+  width: 17px;
+  height: 20px;
+  color: var(--color-ink);
   transform: translate(-50%, -88%);
   filter: drop-shadow(0 2px 3px rgba(20, 15, 10, 0.35));
 }
@@ -1248,7 +1248,7 @@ body.nav-open .cookie-banner {
 
 .city-map .map-pin {
   cursor: pointer;
-  color: #fff;
+  color: var(--color-ink);
 }
 
 .city-map .map-pin use {
@@ -1257,7 +1257,7 @@ body.nav-open .cookie-banner {
 }
 
 .city-map .map-pin.is-hot {
-  color: var(--color-primary-dark);
+  color: var(--color-primary);
 }
 
 .city-legend {
