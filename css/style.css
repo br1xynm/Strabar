@@ -751,19 +751,6 @@ body.nav-open .cookie-banner {
   box-shadow: var(--shadow-lg);
 }
 
-.phone::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90px;
-  height: 20px;
-  background: var(--color-dark);
-  border-radius: 0 0 14px 14px;
-  z-index: 3;
-}
-
 .phone-screen {
   position: relative;
   width: 100%;
