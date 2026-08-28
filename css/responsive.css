@@ -122,11 +122,11 @@
   }
 
   .showcase-phones .phone:nth-child(1) {
-    transform: translateX(60px) rotate(-8deg) scale(0.9);
+    transform: translateX(60px) scale(0.9);
   }
 
   .showcase-phones .phone:nth-child(3) {
-    transform: translateX(-60px) rotate(8deg) scale(0.9);
+    transform: translateX(-60px) scale(0.9);
   }
 
   .footer-cols {

@@ -802,7 +802,7 @@ body.nav-open .cookie-banner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 16px 4px;
+  padding: 15px 19px 4px;
 }
 
 .phone-brand {
@@ -1004,7 +1004,7 @@ body.nav-open .cookie-banner {
 /* Share card screen (dark, orange) */
 .phone-share {
   flex: 1;
-  background: linear-gradient(160deg, var(--color-primary), var(--color-primary-dark));
+  background: linear-gradient(160deg, var(--color-dark-surface), var(--color-dark));
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -1020,6 +1020,7 @@ body.nav-open .cookie-banner {
   width: 46px;
   height: 46px;
   margin-bottom: 6px;
+  color: #fff;
 }
 
 .phone-share strong {
@@ -1461,12 +1462,12 @@ body.nav-open .cookie-banner {
 }
 
 .showcase-phones .phone:nth-child(1) {
-  transform: translateX(28px) rotate(-6deg) scale(0.88);
+  transform: translateX(28px) scale(0.88);
   z-index: 1;
 }
 
 .showcase-phones .phone:nth-child(3) {
-  transform: translateX(-28px) rotate(6deg) scale(0.88);
+  transform: translateX(-28px) scale(0.88);
   z-index: 1;
 }
 
