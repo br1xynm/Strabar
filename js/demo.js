@@ -355,7 +355,7 @@
         pinsGroupEl.innerHTML = "";
         route.stops.forEach((stop) => {
           const g = document.createElementNS(SVG_NS, "g");
-          g.setAttribute("class", "map-pin is-hot");
+          g.setAttribute("class", "map-pin");
           const use = document.createElementNS(SVG_NS, "use");
           use.setAttribute("href", "#icon-logo");
           use.setAttribute("x", String(stop.x));
