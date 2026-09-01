@@ -25,10 +25,6 @@
     max-width: 420px;
     margin-inline: auto;
   }
-
-  .explore-filters {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 /* -------- 900px: tablet / nav switches to desktop pattern -------- */
@@ -91,8 +87,8 @@
     align-items: center;
   }
 
-  .explore-layout {
-    grid-template-columns: minmax(240px, 1fr) minmax(0, 4fr);
+  .friends-layout {
+    grid-template-columns: 1.3fr 1fr;
     align-items: start;
   }
 
