@@ -1,0 +1,431 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap">
+  <style>
+    body { margin: 0; background: #0D0907; }
+    a { color: #FF8068; text-decoration: none; }
+    a:hover { color: #FFAC9B; }
+    .sh-disp { font-family: "Bricolage Grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    .sh-body { font-family: "Instrument Sans", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .sh-mono { font-family: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace; }
+  </style>
+</helmet>
+
+<div class="sh-body" style="background: #0D0907; color: #F7F4ED; padding: 64px 64px 88px; display: flex; flex-direction: column; gap: 60px; -webkit-font-smoothing: antialiased;">
+
+  <!-- ============ CABECERA ============ -->
+  <div style="display: flex; flex-direction: column; gap: 22px;">
+    <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 32px;">
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <svg width="46" height="46" viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M14,8 L34,8 Q40,8 40,14 L40,28 L26,42 Q24,45 22,42 L8,28 L8,14 Q8,8 14,8 Z" fill="none" stroke="#F7F4ED" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"></path>
+          <path d="M11,27 L37,27 L25,40 Q24,42 23,40 Z" fill="#FF4B2E" stroke="none"></path>
+        </svg>
+        <div style="display: flex; flex-direction: column; gap: 2px;">
+          <div class="sh-disp" style="font-size: 30px; font-weight: 800; letter-spacing: -0.03em; line-height: 1;">Strabar</div>
+          <div class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.18em; color: #A49B94;">HOJA DE DISEÑO</div>
+        </div>
+      </div>
+      <div style="display: flex; gap: 10px; align-items: center;">
+        <span class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: #0D0907; background: #FF4B2E; padding: 7px 12px; border-radius: 999px;">DIRECCIÓN · NOCHE</span>
+        <span class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: #C3BDB6; border: 1px solid rgba(247,244,237,0.18); padding: 6px 12px; border-radius: 999px;">V2 · BORRADOR</span>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; align-items: end; padding-top: 8px;">
+      <h1 class="sh-disp" style="grid-column: span 2; margin: 0; font-size: 62px; font-weight: 800; line-height: 0.96; letter-spacing: -0.035em; text-wrap: balance;">
+        El sistema de una app<br>que se usa de noche
+      </h1>
+      <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #C3BDB6; text-wrap: pretty;">
+        Fundamentos del rediseño: color, tipografía, espacio y movimiento. La marca (rojo señal + calidez cálida) se mantiene; el lienzo pasa del papel crema a la noche.
+      </p>
+    </div>
+  </div>
+
+  <div style="height: 1px; background: rgba(247,244,237,0.12);"></div>
+
+  <!-- ============ 01 PRINCIPIOS ============ -->
+  <div style="display: flex; flex-direction: column; gap: 26px;">
+    <div style="display: flex; align-items: baseline; gap: 16px;">
+      <span class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.18em; color: #FF4B2E;">01</span>
+      <h2 class="sh-disp" style="margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -0.02em;">Principios</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px;">
+      <div style="background: #16120F; border: 1px solid rgba(247,244,237,0.10); border-radius: 20px; padding: 26px; display: flex; flex-direction: column; gap: 10px;">
+        <span class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.16em; color: #00B9CF;">NOCHE PRIMERO</span>
+        <h3 class="sh-disp" style="margin: 0; font-size: 21px; font-weight: 700; letter-spacing: -0.015em; line-height: 1.2;">La web se parece a la app a la 1 a.m.</h3>
+        <p style="margin: 0; font-size: 14.5px; line-height: 1.6; color: #A49B94;">El fondo oscuro no es una moda: es el contexto real de uso. El crema queda como respiro, no como base.</p>
+      </div>
+      <div style="background: #16120F; border: 1px solid rgba(247,244,237,0.10); border-radius: 20px; padding: 26px; display: flex; flex-direction: column; gap: 10px;">
+        <span class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.16em; color: #00B9CF;">EL DATO ES EL HÉROE</span>
+        <h3 class="sh-disp" style="margin: 0; font-size: 21px; font-weight: 700; letter-spacing: -0.015em; line-height: 1.2;">Kilómetros, paradas y tiempo, en mono</h3>
+        <p style="margin: 0; font-size: 14.5px; line-height: 1.6; color: #A49B94;">Cifras tabulares con etiqueta corta. Nada de estadística decorativa: si un número no cambia una decisión, fuera.</p>
+      </div>
+      <div style="background: #16120F; border: 1px solid rgba(247,244,237,0.10); border-radius: 20px; padding: 26px; display: flex; flex-direction: column; gap: 10px;">
+        <span class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.16em; color: #00B9CF;">UNA SOLA ACCIÓN</span>
+        <h3 class="sh-disp" style="margin: 0; font-size: 21px; font-weight: 700; letter-spacing: -0.015em; line-height: 1.2;">«Probar la demo», repetida</h3>
+        <p style="margin: 0; font-size: 14.5px; line-height: 1.6; color: #A49B94;">El rojo señal solo se usa para eso. Todo lo demás es contorno o texto: el CTA nunca compite consigo mismo.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="height: 1px; background: rgba(247,244,237,0.12);"></div>
+
+  <!-- ============ 02 COLOR ============ -->
+  <div style="display: flex; flex-direction: column; gap: 30px;">
+    <div style="display: flex; align-items: baseline; gap: 16px;">
+      <span class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.18em; color: #FF4B2E;">02</span>
+      <h2 class="sh-disp" style="margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -0.02em;">Color</h2>
+      <span style="font-size: 14px; color: #A49B94;">Todos los valores derivan en oklch; los contrastes son sobre <span class="sh-mono" style="font-size: 13px; color: #C3BDB6;">--nx-base</span>.</span>
+    </div>
+
+    <!-- Superficies noche -->
+    <div style="display: flex; flex-direction: column; gap: 14px;">
+      <div class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.16em; color: #A49B94;">SUPERFICIES · NOCHE</div>
+      <div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px;">
+        <div style="border: 1px solid rgba(247,244,237,0.14); border-radius: 14px; overflow: hidden;">
+          <div style="background: #0D0907; height: 76px;"></div>
+          <div style="padding: 12px 14px 14px; background: #16120F; display: flex; flex-direction: column; gap: 3px;">
+            <div class="sh-mono" style="font-size: 12px; font-weight: 700; color: #F7F4ED;">--nx-void</div>
+            <div class="sh-mono" style="font-size: 11px; color: #A49B94;">#0D0907</div>
+            <div style="font-size: 12px; color: #A49B94;">Fondo de página</div>
+          </div>
+        </div>
+        <div style="border: 1px solid rgba(247,244,237,0.14); border-radius: 14px; overflow: hidden;">
+          <div style="background: #16120F; height: 76px;"></div>
+          <div style="padding: 12px 14px 14px; background: #16120F; display: flex; flex-direction: column; gap: 3px;">
+            <div class="sh-mono" style="font-size: 12px; font-weight: 700; color: #F7F4ED;">--nx-base</div>
+            <div class="sh-mono" style="font-size: 11px; color: #A49B94;">#16120F</div>
+            <div style="font-size: 12px; color: #A49B94;">Secciones</div>
+          </div>
+        </div>
+        <div style="border: 1px solid rgba(247,244,237,0.14); border-radius: 14px; overflow: hidden;">
+          <div style="background: #201A18; height: 76px;"></div>
+          <div style="padding: 12px 14px 14px; background: #16120F; display: flex; flex-direction: column; gap: 3px;">
+            <div class="sh-mono" style="font-size: 12px; font-weight: 700; color: #F7F4ED;">--nx-raised</div>
+            <div class="sh-mono" style="font-size: 11px; color: #A49B94;">#201A18</div>
+            <div style="font-size: 12px; color: #A49B94;">Tarjetas</div>
+          </div>
+        </div>
+        <div style="border: 1px solid rgba(247,244,237,0.14); border-radius: 14px; overflow: hidden;">
+          <div style="background: #2C2623; height: 76px;"></div>
+          <div style="padding: 12px 14px 14px; background: #16120F; display: flex; flex-direction: column; gap: 3px;">
+            <div class="sh-mono" style="font-size: 12px; font-weight: 700; color: #F7F4ED;">--nx-hi</div>
+            <div class="sh-mono" style="font-size: 11px; color: #A49B94;">#2C2623</div>
+            <div style="font-size: 12px; color: #A49B94;">Campos, hover</div>
+          </div>
+        </div>
+        <div style="border: 1px solid rgba(247,244,237,0.14); border-radius: 14px; overflow: hidden;">
+          <div style="background: #16120F; height: 76px; display: flex; flex-direction: column;">
+            <div style="height: 1px; background: rgba(247,244,237,0.10); margin-top: 26px;"></div>
+            <div style="height: 1px; background: rgba(247,244,237,0.18); margin-top: 22px;"></div>
+          </div>
+          <div style="padding: 12px 14px 14px; background: #16120F; display: flex; flex-direction: column; gap: 3px;">
+            <div class="sh-mono" style="font-size: 12px; font-weight: 700; color: #F7F4ED;">--nx-line / -strong</div>
+            <div class="sh-mono" style="font-size: 11px; color: #A49B94;">F7F4ED · 10% / 18%</div>
+            <div style="font-size: 12px; color: #A49B94;">Filetes</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Texto -->
+    <div style="display: flex; flex-direction: column; gap: 14px;">
+      <div class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.16em; color: #A49B94;">TEXTO SOBRE NOCHE</div>
+      <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px;">
+        <div style="background: #16120F; border: 1px solid rgba(247,244,237,0.10); border-radius: 14px; padding: 18px; display: flex; flex-direction: column; gap: 8px;">
+          <div class="sh-disp" style="font-size: 24px; font-weight: 700; color: #F7F4ED; letter-spacing: -0.02em;">Titulares</div>
+          <div class="sh-mono" style="font-size: 11px; color: #A49B94;">--tx-hi · #F7F4ED</div>
+          <div class="sh-mono" style="font-size: 11px; font-weight: 700; color: #00B9CF;">16.96 : 1</div>
+        </div>
+        <div style="background: #16120F; border: 1px solid rgba(247,244,237,0.10); border-radius: 14px; padding: 18px; display: flex; flex-direction: column; gap: 8px;">
+          <div style="font-size: 17px; color: #C3BDB6; line-height: 1.4;">Cuerpo y entradillas</div>
+          <div class="sh-mono" style="font-size: 11px; color: #A49B94;">--tx-mid · #C3BDB6</div>
+          <div class="sh-mono" style="font-size: 11px; font-weight: 700; color: #00B9CF;">10.00 : 1</div>
+        </div>
+        <div style="background: #16120F; border: 1px solid rgba(247,244,237,0.10); border-radius: 14px; padding: 18px; display: flex; flex-direction: column; gap: 8px;">
+          <div style="font-size: 15px; color: #A49B94; line-height: 1.4;">Secundario y pies</div>
+          <div class="sh-mono" style="font-size: 11px; color: #A49B94;">--tx-low · #A49B94</div>
+          <div class="sh-mono" style="font-size: 11px; font-weight: 700; color: #00B9CF;">6.82 : 1</div>
+        </div>
+        <div style="background: #16120F; border: 1px solid rgba(247,244,237,0.10); border-radius: 14px; padding: 18px; display: flex; flex-direction: column; gap: 8px;">
+          <div style="font-size: 15px; color: #6E655F; line-height: 1.4;">Deshabilitado</div>
+          <div class="sh-mono" style="font-size: 11px; color: #A49B94;">--tx-off · #6E655F</div>
+          <div class="sh-mono" style="font-size: 11px; font-weight: 700; color: #A49B94;">NO PARA TEXTO</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rampa señal -->
+    <div style="display: flex; flex-direction: column; gap: 14px;">
+      <div style="display: flex; align-items: baseline; gap: 14px;">
+        <div class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.16em; color: #A49B94;">SEÑAL · LA MARCA</div>
+        <div style="font-size: 13.5px; color: #A49B94;">Un solo uso: la acción principal y el acento del titular.</div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 10px;">
+        <div style="display: flex; flex-direction: column; gap: 8px;"><div style="background: #9E1800; height: 62px; border-radius: 12px;"></div><div class="sh-mono" style="font-size: 11px; color: #C3BDB6;">700</div><div class="sh-mono" style="font-size: 10.5px; color: #A49B94;">#9E1800</div></div>
+        <div style="display: flex; flex-direction: column; gap: 8px;"><div style="background: #CF2300; height: 62px; border-radius: 12px;"></div><div class="sh-mono" style="font-size: 11px; color: #C3BDB6;">600</div><div class="sh-mono" style="font-size: 10.5px; color: #A49B94;">#CF2300</div></div>
+        <div style="display: flex; flex-direction: column; gap: 8px;"><div style="background: #FF4B2E; height: 62px; border-radius: 12px; box-shadow: 0 0 0 2px #0D0907, 0 0 0 4px #FF4B2E;"></div><div class="sh-mono" style="font-size: 11px; font-weight: 700; color: #FF8068;">500 · BASE</div><div class="sh-mono" style="font-size: 10.5px; color: #A49B94;">#FF4B2E</div></div>
+        <div style="display: flex; flex-direction: column; gap: 8px;"><div style="background: #FF8068; height: 62px; border-radius: 12px;"></div><div class="sh-mono" style="font-size: 11px; color: #C3BDB6;">400</div><div class="sh-mono" style="font-size: 10.5px; color: #A49B94;">#FF8068</div></div>
+        <div style="display: flex; flex-direction: column; gap: 8px;"><div style="background: #FFAC9B; height: 62px; border-radius: 12px;"></div><div class="sh-mono" style="font-size: 11px; color: #C3BDB6;">300</div><div class="sh-mono" style="font-size: 10.5px; color: #A49B94;">#FFAC9B</div></div>
+        <div style="display: flex; flex-direction: column; gap: 8px;"><div style="background: #FFD2C8; height: 62px; border-radius: 12px;"></div><div class="sh-mono" style="font-size: 11px; color: #C3BDB6;">200</div><div class="sh-mono" style="font-size: 10.5px; color: #A49B94;">#FFD2C8</div></div>
+        <div style="display: flex; flex-direction: column; gap: 8px;"><div style="background: rgba(255,75,46,0.14); height: 62px; border-radius: 12px; border: 1px solid rgba(255,75,46,0.3);"></div><div class="sh-mono" style="font-size: 11px; color: #C3BDB6;">TINTE</div><div class="sh-mono" style="font-size: 10.5px; color: #A49B94;">señal 14%</div></div>
+      </div>
+    </div>
+
+    <!-- La corrección de contraste -->
+    <div style="background: #16120F; border: 1px solid rgba(255,75,46,0.28); border-radius: 20px; padding: 26px 28px; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center;">
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <span class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.16em; color: #FF8068;">CORRECCIÓN HEREDADA</span>
+        <h3 class="sh-disp" style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.015em; line-height: 1.25;">El botón principal deja de llevar texto blanco</h3>
+        <p style="margin: 0; font-size: 14.5px; line-height: 1.6; color: #A49B94;">Blanco sobre <span class="sh-mono" style="font-size: 13px;">#FF4B2E</span> da 3,33:1 y no pasa AA. Con tinta oscura sube a 5,95:1 y además se ve más nítido a plena luz.</p>
+      </div>
+      <div style="display: flex; gap: 16px; align-items: stretch;">
+        <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 10px; align-items: center;">
+          <div style="width: 100%; background: #FF4B2E; color: #FFFFFF; border-radius: 999px; padding: 15px 10px; text-align: center; font-weight: 600; font-size: 15px; opacity: 0.85;">Probar la demo</div>
+          <div class="sh-mono" style="font-size: 11px; font-weight: 700; color: #A49B94;">3.33 : 1 &nbsp;·&nbsp; ANTES</div>
+        </div>
+        <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 10px; align-items: center;">
+          <div style="width: 100%; background: #FF4B2E; color: #0D0907; border-radius: 999px; padding: 15px 10px; text-align: center; font-weight: 600; font-size: 15px;">Probar la demo</div>
+          <div class="sh-mono" style="font-size: 11px; font-weight: 700; color: #00B9CF;">5.95 : 1 &nbsp;·&nbsp; AHORA</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Acento en directo + soporte -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.16em; color: #A49B94;">EN DIRECTO · GPS Y RUTA</div>
+        <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px;">
+          <div style="display: flex; flex-direction: column; gap: 8px;"><div style="background: #007E90; height: 62px; border-radius: 12px;"></div><div class="sh-mono" style="font-size: 11px; color: #C3BDB6;">600</div><div class="sh-mono" style="font-size: 10.5px; color: #A49B94;">#007E90</div></div>
+          <div style="display: flex; flex-direction: column; gap: 8px;"><div style="background: #00B9CF; height: 62px; border-radius: 12px;"></div><div class="sh-mono" style="font-size: 11px; font-weight: 700; color: #00B9CF;">500 · BASE</div><div class="sh-mono" style="font-size: 10.5px; color: #A49B94;">#00B9CF</div></div>
+          <div style="display: flex; flex-direction: column; gap: 8px;"><div style="background: #7FE0EC; height: 62px; border-radius: 12px;"></div><div class="sh-mono" style="font-size: 11px; color: #C3BDB6;">300</div><div class="sh-mono" style="font-size: 10.5px; color: #A49B94;">#7FE0EC</div></div>
+        </div>
+        <p style="margin: 0; font-size: 13.5px; line-height: 1.6; color: #A49B94;">Complementario del señal (≈178° de separación). Solo estados vivos: trazo de ruta, «GPS activo», amigos en directo. Nunca botones.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.16em; color: #A49B94;">SOPORTE Y SEMÁNTICO</div>
+        <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px;">
+          <div style="display: flex; flex-direction: column; gap: 8px;"><div style="background: #F2A93B; height: 62px; border-radius: 12px;"></div><div class="sh-mono" style="font-size: 11px; color: #C3BDB6;">--gold</div><div class="sh-mono" style="font-size: 10.5px; color: #A49B94;">#F2A93B</div></div>
+          <div style="display: flex; flex-direction: column; gap: 8px;"><div style="background: #B9C9AE; height: 62px; border-radius: 12px;"></div><div class="sh-mono" style="font-size: 11px; color: #C3BDB6;">--sage</div><div class="sh-mono" style="font-size: 10.5px; color: #A49B94;">#B9C9AE</div></div>
+          <div style="display: flex; flex-direction: column; gap: 8px;"><div style="background: #43B966; height: 62px; border-radius: 12px;"></div><div class="sh-mono" style="font-size: 11px; color: #C3BDB6;">--ok</div><div class="sh-mono" style="font-size: 10.5px; color: #A49B94;">#43B966</div></div>
+          <div style="display: flex; flex-direction: column; gap: 8px;"><div style="background: #FF6A5A; height: 62px; border-radius: 12px;"></div><div class="sh-mono" style="font-size: 11px; color: #C3BDB6;">--alert</div><div class="sh-mono" style="font-size: 10.5px; color: #A49B94;">#FF6A5A</div></div>
+        </div>
+        <p style="margin: 0; font-size: 13.5px; line-height: 1.6; color: #A49B94;">Oro y salvia sobreviven del sistema actual: oro para rachas y récords, salvia para parques en el mapa y confirmaciones suaves.</p>
+      </div>
+    </div>
+
+    <!-- Papel + mapa -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.16em; color: #A49B94;">PAPEL · SECCIONES INVERTIDAS</div>
+        <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px;">
+          <div style="display: flex; flex-direction: column; gap: 8px;"><div style="background: #FAF6EE; height: 62px; border-radius: 12px;"></div><div class="sh-mono" style="font-size: 11px; color: #C3BDB6;">--pa-000</div><div class="sh-mono" style="font-size: 10.5px; color: #A49B94;">#FAF6EE</div></div>
+          <div style="display: flex; flex-direction: column; gap: 8px;"><div style="background: #F1E9DA; height: 62px; border-radius: 12px;"></div><div class="sh-mono" style="font-size: 11px; color: #C3BDB6;">--pa-100</div><div class="sh-mono" style="font-size: 10.5px; color: #A49B94;">#F1E9DA</div></div>
+          <div style="display: flex; flex-direction: column; gap: 8px;"><div style="background: #1C130F; height: 62px; border-radius: 12px; border: 1px solid rgba(247,244,237,0.14);"></div><div class="sh-mono" style="font-size: 11px; color: #C3BDB6;">--pa-ink</div><div class="sh-mono" style="font-size: 10.5px; color: #A49B94;">#1C130F</div></div>
+          <div style="display: flex; flex-direction: column; gap: 8px;"><div style="background: #5A4C43; height: 62px; border-radius: 12px;"></div><div class="sh-mono" style="font-size: 11px; color: #C3BDB6;">--pa-soft</div><div class="sh-mono" style="font-size: 10.5px; color: #A49B94;">#5A4C43</div></div>
+        </div>
+        <p style="margin: 0; font-size: 13.5px; line-height: 1.6; color: #A49B94;">Idénticos a los actuales. Reservados a una o dos secciones de respiro; sobre papel, el enlace y el texto en rojo usan <span class="sh-mono" style="font-size: 12.5px;">#CF2300</span>, no el señal.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.16em; color: #A49B94;">MAPA NOCTURNO</div>
+        <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px;">
+          <div style="display: flex; flex-direction: column; gap: 8px;"><div style="background: #171310; height: 62px; border-radius: 12px; border: 1px solid rgba(247,244,237,0.14);"></div><div class="sh-mono" style="font-size: 11px; color: #C3BDB6;">tierra</div><div class="sh-mono" style="font-size: 10.5px; color: #A49B94;">#171310</div></div>
+          <div style="display: flex; flex-direction: column; gap: 8px;"><div style="background: #27211D; height: 62px; border-radius: 12px;"></div><div class="sh-mono" style="font-size: 11px; color: #C3BDB6;">calle</div><div class="sh-mono" style="font-size: 10.5px; color: #A49B94;">#27211D</div></div>
+          <div style="display: flex; flex-direction: column; gap: 8px;"><div style="background: #172418; height: 62px; border-radius: 12px;"></div><div class="sh-mono" style="font-size: 11px; color: #C3BDB6;">parque</div><div class="sh-mono" style="font-size: 10.5px; color: #A49B94;">#172418</div></div>
+          <div style="display: flex; flex-direction: column; gap: 8px;"><div style="background: #0E2530; height: 62px; border-radius: 12px;"></div><div class="sh-mono" style="font-size: 11px; color: #C3BDB6;">agua</div><div class="sh-mono" style="font-size: 10.5px; color: #A49B94;">#0E2530</div></div>
+        </div>
+        <p style="margin: 0; font-size: 13.5px; line-height: 1.6; color: #A49B94;">La ruta se traza en <span class="sh-mono" style="font-size: 12.5px; color: #00B9CF;">#00B9CF</span> con funda oscura de 2 px; las chinchetas van en señal. Solo esos dos colores rompen el gris del mapa.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="height: 1px; background: rgba(247,244,237,0.12);"></div>
+
+  <!-- ============ 03 TIPOGRAFÍA ============ -->
+  <div style="display: flex; flex-direction: column; gap: 28px;">
+    <div style="display: flex; align-items: baseline; gap: 16px;">
+      <span class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.18em; color: #FF4B2E;">03</span>
+      <h2 class="sh-disp" style="margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -0.02em;">Tipografía</h2>
+      <span style="font-size: 14px; color: #A49B94;">Fuera Inter. Tres familias con papeles que no se solapan.</span>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px;">
+      <div style="background: #16120F; border: 1px solid rgba(247,244,237,0.10); border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 12px;">
+        <div class="sh-disp" style="font-size: 46px; font-weight: 800; line-height: 1; letter-spacing: -0.03em;">Aa</div>
+        <div style="display: flex; flex-direction: column; gap: 4px;">
+          <div class="sh-disp" style="font-size: 18px; font-weight: 700;">Bricolage Grotesque</div>
+          <div class="sh-mono" style="font-size: 11px; letter-spacing: 0.1em; color: #00B9CF;">DISPLAY · 700 / 800</div>
+        </div>
+        <p style="margin: 0; font-size: 13.5px; line-height: 1.6; color: #A49B94;">Titulares y números grandes de portada. Ancho estrecho y terminales vivas: tiene carácter de rótulo urbano sin gritar.</p>
+      </div>
+      <div style="background: #16120F; border: 1px solid rgba(247,244,237,0.10); border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 12px;">
+        <div style="font-size: 46px; font-weight: 500; line-height: 1; letter-spacing: -0.02em;">Aa</div>
+        <div style="display: flex; flex-direction: column; gap: 4px;">
+          <div class="sh-disp" style="font-size: 18px; font-weight: 700;">Instrument Sans</div>
+          <div class="sh-mono" style="font-size: 11px; letter-spacing: 0.1em; color: #00B9CF;">TEXTO · 400 / 500 / 600</div>
+        </div>
+        <p style="margin: 0; font-size: 13.5px; line-height: 1.6; color: #A49B94;">Entradillas, párrafos, botones y menú. Neutra pero no anónima; aguanta bien los 14 px de las tarjetas.</p>
+      </div>
+      <div style="background: #16120F; border: 1px solid rgba(247,244,237,0.10); border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 12px;">
+        <div class="sh-mono" style="font-size: 46px; font-weight: 700; line-height: 1; letter-spacing: -0.03em;">Aa</div>
+        <div style="display: flex; flex-direction: column; gap: 4px;">
+          <div class="sh-disp" style="font-size: 18px; font-weight: 700;">JetBrains Mono</div>
+          <div class="sh-mono" style="font-size: 11px; letter-spacing: 0.1em; color: #00B9CF;">DATO · 500 / 700</div>
+        </div>
+        <p style="margin: 0; font-size: 13.5px; line-height: 1.6; color: #A49B94;">Cronómetro, distancias, etiquetas en versalitas. Cifras tabulares: los números no bailan al actualizarse.</p>
+      </div>
+    </div>
+
+    <!-- Escala -->
+    <div style="border: 1px solid rgba(247,244,237,0.10); border-radius: 20px; overflow: hidden;">
+      <div style="display: grid; grid-template-columns: 150px 1fr 210px; gap: 24px; padding: 14px 26px; background: #16120F; border-bottom: 1px solid rgba(247,244,237,0.10);">
+        <div class="sh-mono" style="font-size: 10.5px; font-weight: 700; letter-spacing: 0.16em; color: #A49B94;">TOKEN</div>
+        <div class="sh-mono" style="font-size: 10.5px; font-weight: 700; letter-spacing: 0.16em; color: #A49B94;">MUESTRA</div>
+        <div class="sh-mono" style="font-size: 10.5px; font-weight: 700; letter-spacing: 0.16em; color: #A49B94;">ESCRITORIO / MÓVIL</div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 150px 1fr 210px; gap: 24px; padding: 22px 26px; align-items: center; border-bottom: 1px solid rgba(247,244,237,0.08);">
+        <div class="sh-mono" style="font-size: 12px; color: #FF8068;">display-1</div>
+        <div class="sh-disp" style="font-size: 56px; font-weight: 800; line-height: 0.96; letter-spacing: -0.035em;">Tu noche. Tu ruta.</div>
+        <div class="sh-mono" style="font-size: 11.5px; line-height: 1.7; color: #A49B94;">84 / 0.94 / -0.035em<br>46 / 1.00 / -0.025em</div>
+      </div>
+      <div style="display: grid; grid-template-columns: 150px 1fr 210px; gap: 24px; padding: 22px 26px; align-items: center; border-bottom: 1px solid rgba(247,244,237,0.08);">
+        <div class="sh-mono" style="font-size: 12px; color: #FF8068;">display-2</div>
+        <div class="sh-disp" style="font-size: 40px; font-weight: 800; line-height: 1.02; letter-spacing: -0.03em;">Cada ciudad, vista desde sus noches</div>
+        <div class="sh-mono" style="font-size: 11.5px; line-height: 1.7; color: #A49B94;">56 / 1.02 / -0.03em<br>34 / 1.10 / -0.02em</div>
+      </div>
+      <div style="display: grid; grid-template-columns: 150px 1fr 210px; gap: 24px; padding: 22px 26px; align-items: center; border-bottom: 1px solid rgba(247,244,237,0.08);">
+        <div class="sh-mono" style="font-size: 12px; color: #FF8068;">title-3</div>
+        <div class="sh-disp" style="font-size: 26px; font-weight: 700; line-height: 1.2; letter-spacing: -0.015em;">Marca cada parada</div>
+        <div class="sh-mono" style="font-size: 11.5px; line-height: 1.7; color: #A49B94;">26 / 1.20 / -0.015em<br>21 / 1.25 / -0.01em</div>
+      </div>
+      <div style="display: grid; grid-template-columns: 150px 1fr 210px; gap: 24px; padding: 22px 26px; align-items: center; border-bottom: 1px solid rgba(247,244,237,0.08);">
+        <div class="sh-mono" style="font-size: 12px; color: #FF8068;">lede</div>
+        <div style="font-size: 20px; line-height: 1.55; color: #C3BDB6; letter-spacing: -0.005em;">Strabar registra el recorrido real de tu salida y lo convierte en algo que se puede compartir.</div>
+        <div class="sh-mono" style="font-size: 11.5px; line-height: 1.7; color: #A49B94;">20 / 1.55 / -0.005em<br>17 / 1.60 / 0</div>
+      </div>
+      <div style="display: grid; grid-template-columns: 150px 1fr 210px; gap: 24px; padding: 22px 26px; align-items: center; border-bottom: 1px solid rgba(247,244,237,0.08);">
+        <div class="sh-mono" style="font-size: 12px; color: #FF8068;">body</div>
+        <div style="font-size: 16.5px; line-height: 1.65; color: #C3BDB6;">Activa el GPS al salir y deja que Strabar dibuje tu recorrido en tiempo real.</div>
+        <div class="sh-mono" style="font-size: 11.5px; line-height: 1.7; color: #A49B94;">16.5 / 1.65<br>16 / 1.65</div>
+      </div>
+      <div style="display: grid; grid-template-columns: 150px 1fr 210px; gap: 24px; padding: 22px 26px; align-items: center; border-bottom: 1px solid rgba(247,244,237,0.08);">
+        <div class="sh-mono" style="font-size: 12px; color: #FF8068;">data-xl</div>
+        <div class="sh-mono" style="font-size: 44px; font-weight: 700; line-height: 1; letter-spacing: -0.02em; font-variant-numeric: tabular-nums;">00:24:18</div>
+        <div class="sh-mono" style="font-size: 11.5px; line-height: 1.7; color: #A49B94;">44 / 1.00 / -0.02em<br>34 / 1.00 · tabular</div>
+      </div>
+      <div style="display: grid; grid-template-columns: 150px 1fr 210px; gap: 24px; padding: 22px 26px; align-items: center;">
+        <div class="sh-mono" style="font-size: 12px; color: #FF8068;">label</div>
+        <div class="sh-mono" style="font-size: 11.5px; font-weight: 700; letter-spacing: 0.16em; color: #A49B94;">TIEMPO TRANSCURRIDO</div>
+        <div class="sh-mono" style="font-size: 11.5px; line-height: 1.7; color: #A49B94;">11.5 / 1.00 / 0.16em<br>versalitas, sin cursiva</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="height: 1px; background: rgba(247,244,237,0.12);"></div>
+
+  <!-- ============ 04 ESPACIO, RADIOS, ELEVACIÓN, MOVIMIENTO ============ -->
+  <div style="display: flex; flex-direction: column; gap: 28px;">
+    <div style="display: flex; align-items: baseline; gap: 16px;">
+      <span class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.18em; color: #FF4B2E;">04</span>
+      <h2 class="sh-disp" style="margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -0.02em;">Espacio, forma y movimiento</h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1.35fr 1fr; gap: 24px;">
+      <div style="background: #16120F; border: 1px solid rgba(247,244,237,0.10); border-radius: 20px; padding: 26px; display: flex; flex-direction: column; gap: 18px;">
+        <div class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.16em; color: #A49B94;">ESCALA DE ESPACIO · BASE 4</div>
+        <div style="display: flex; flex-direction: column; gap: 9px;">
+          <div style="display: flex; align-items: center; gap: 14px;"><div class="sh-mono" style="font-size: 11.5px; color: #A49B94; width: 74px;">space-1</div><div style="background: #FF4B2E; height: 12px; width: 4px; border-radius: 2px;"></div><div class="sh-mono" style="font-size: 11.5px; color: #C3BDB6;">4</div></div>
+          <div style="display: flex; align-items: center; gap: 14px;"><div class="sh-mono" style="font-size: 11.5px; color: #A49B94; width: 74px;">space-2</div><div style="background: #FF4B2E; height: 12px; width: 8px; border-radius: 2px;"></div><div class="sh-mono" style="font-size: 11.5px; color: #C3BDB6;">8</div></div>
+          <div style="display: flex; align-items: center; gap: 14px;"><div class="sh-mono" style="font-size: 11.5px; color: #A49B94; width: 74px;">space-3</div><div style="background: #FF4B2E; height: 12px; width: 12px; border-radius: 2px;"></div><div class="sh-mono" style="font-size: 11.5px; color: #C3BDB6;">12</div></div>
+          <div style="display: flex; align-items: center; gap: 14px;"><div class="sh-mono" style="font-size: 11.5px; color: #A49B94; width: 74px;">space-4</div><div style="background: #FF4B2E; height: 12px; width: 16px; border-radius: 2px;"></div><div class="sh-mono" style="font-size: 11.5px; color: #C3BDB6;">16</div></div>
+          <div style="display: flex; align-items: center; gap: 14px;"><div class="sh-mono" style="font-size: 11.5px; color: #A49B94; width: 74px;">space-6</div><div style="background: #FF4B2E; height: 12px; width: 24px; border-radius: 2px;"></div><div class="sh-mono" style="font-size: 11.5px; color: #C3BDB6;">24</div></div>
+          <div style="display: flex; align-items: center; gap: 14px;"><div class="sh-mono" style="font-size: 11.5px; color: #A49B94; width: 74px;">space-8</div><div style="background: #FF4B2E; height: 12px; width: 32px; border-radius: 2px;"></div><div class="sh-mono" style="font-size: 11.5px; color: #C3BDB6;">32</div></div>
+          <div style="display: flex; align-items: center; gap: 14px;"><div class="sh-mono" style="font-size: 11.5px; color: #A49B94; width: 74px;">space-12</div><div style="background: #FF4B2E; height: 12px; width: 48px; border-radius: 2px;"></div><div class="sh-mono" style="font-size: 11.5px; color: #C3BDB6;">48</div></div>
+          <div style="display: flex; align-items: center; gap: 14px;"><div class="sh-mono" style="font-size: 11.5px; color: #A49B94; width: 74px;">space-16</div><div style="background: #FF4B2E; height: 12px; width: 64px; border-radius: 2px;"></div><div class="sh-mono" style="font-size: 11.5px; color: #C3BDB6;">64</div></div>
+          <div style="display: flex; align-items: center; gap: 14px;"><div class="sh-mono" style="font-size: 11.5px; color: #A49B94; width: 74px;">space-24</div><div style="background: #FF4B2E; height: 12px; width: 96px; border-radius: 2px;"></div><div class="sh-mono" style="font-size: 11.5px; color: #C3BDB6;">96</div></div>
+          <div style="display: flex; align-items: center; gap: 14px;"><div class="sh-mono" style="font-size: 11.5px; color: #A49B94; width: 74px;">space-32</div><div style="background: #FF4B2E; height: 12px; width: 128px; border-radius: 2px;"></div><div class="sh-mono" style="font-size: 11.5px; color: #C3BDB6;">128 · aire entre secciones</div></div>
+        </div>
+        <div style="height: 1px; background: rgba(247,244,237,0.10);"></div>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px;">
+          <div class="sh-mono" style="font-size: 12px; color: #A49B94;">contenedor máx. <span style="color: #C3BDB6;">1240</span></div>
+          <div class="sh-mono" style="font-size: 12px; color: #A49B94;">márgenes <span style="color: #C3BDB6;">24 / 40</span></div>
+          <div class="sh-mono" style="font-size: 12px; color: #A49B94;">cabecera <span style="color: #C3BDB6;">72</span></div>
+          <div class="sh-mono" style="font-size: 12px; color: #A49B94;">rejilla <span style="color: #C3BDB6;">12 col · gap 24</span></div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <div style="background: #16120F; border: 1px solid rgba(247,244,237,0.10); border-radius: 20px; padding: 26px; display: flex; flex-direction: column; gap: 16px;">
+          <div class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.16em; color: #A49B94;">RADIOS · MÁS SECOS QUE LOS ACTUALES</div>
+          <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px;">
+            <div style="display: flex; flex-direction: column; gap: 8px; align-items: center;"><div style="width: 100%; height: 50px; background: #2C2623; border-radius: 6px;"></div><div class="sh-mono" style="font-size: 11px; color: #C3BDB6;">6</div></div>
+            <div style="display: flex; flex-direction: column; gap: 8px; align-items: center;"><div style="width: 100%; height: 50px; background: #2C2623; border-radius: 12px;"></div><div class="sh-mono" style="font-size: 11px; color: #C3BDB6;">12</div></div>
+            <div style="display: flex; flex-direction: column; gap: 8px; align-items: center;"><div style="width: 100%; height: 50px; background: #2C2623; border-radius: 20px;"></div><div class="sh-mono" style="font-size: 11px; color: #C3BDB6;">20</div></div>
+            <div style="display: flex; flex-direction: column; gap: 8px; align-items: center;"><div style="width: 100%; height: 50px; background: #2C2623; border-radius: 999px;"></div><div class="sh-mono" style="font-size: 11px; color: #C3BDB6;">píldora</div></div>
+          </div>
+          <p style="margin: 0; font-size: 13px; line-height: 1.6; color: #A49B94;">10/16/24 → 6/12/20. La píldora se reserva a botones y etiquetas; las tarjetas van a 20.</p>
+        </div>
+
+        <div style="background: #16120F; border: 1px solid rgba(247,244,237,0.10); border-radius: 20px; padding: 26px; display: flex; flex-direction: column; gap: 16px;">
+          <div class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.16em; color: #A49B94;">ELEVACIÓN EN OSCURO</div>
+          <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px;">
+            <div style="display: flex; flex-direction: column; gap: 10px; align-items: center;">
+              <div style="width: 100%; height: 58px; background: #201A18; border-radius: 14px; border: 1px solid rgba(247,244,237,0.10); box-shadow: inset 0 1px 0 rgba(247,244,237,0.05), 0 6px 18px rgba(0,0,0,0.45);"></div>
+              <div class="sh-mono" style="font-size: 11px; color: #C3BDB6;">elev-1</div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 10px; align-items: center;">
+              <div style="width: 100%; height: 58px; background: #201A18; border-radius: 14px; border: 1px solid rgba(247,244,237,0.14); box-shadow: inset 0 1px 0 rgba(247,244,237,0.06), 0 22px 54px rgba(0,0,0,0.6);"></div>
+              <div class="sh-mono" style="font-size: 11px; color: #C3BDB6;">elev-2</div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 10px; align-items: center;">
+              <div style="width: 100%; height: 58px; background: #FF4B2E; border-radius: 14px; box-shadow: 0 10px 34px rgba(255,75,46,0.32);"></div>
+              <div class="sh-mono" style="font-size: 11px; color: #C3BDB6;">glow</div>
+            </div>
+          </div>
+          <p style="margin: 0; font-size: 13px; line-height: 1.6; color: #A49B94;">Sobre negro una sombra no se ve: la separación la hace el filete de 1 px más un brillo interior. El glow solo bajo el botón principal.</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="background: #16120F; border: 1px solid rgba(247,244,237,0.10); border-radius: 20px; padding: 26px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 26px;">
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.16em; color: #A49B94;">CURVA</div>
+        <div class="sh-mono" style="font-size: 13px; color: #C3BDB6;">cubic-bezier(.22,1,.36,1)</div>
+        <p style="margin: 0; font-size: 13px; line-height: 1.6; color: #A49B94;">La misma que ya usa el sitio. Entrada rápida, frenada larga.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.16em; color: #A49B94;">DURACIONES</div>
+        <div class="sh-mono" style="font-size: 13px; color: #C3BDB6;">160 · 380 · 760 ms</div>
+        <p style="margin: 0; font-size: 13px; line-height: 1.6; color: #A49B94;">Hover, aparición de sección, trazado de ruta.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.16em; color: #A49B94;">APARICIÓN</div>
+        <div class="sh-mono" style="font-size: 13px; color: #C3BDB6;">y+18px · escalón 70 ms</div>
+        <p style="margin: 0; font-size: 13px; line-height: 1.6; color: #A49B94;">Una sola por sección; nunca dos animaciones compitiendo.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.16em; color: #A49B94;">PULSO EN DIRECTO</div>
+        <div class="sh-mono" style="font-size: 13px; color: #C3BDB6;">1.8 s · solo GPS activo</div>
+        <p style="margin: 0; font-size: 13px; line-height: 1.6; color: #A49B94;">Se respeta <span class="sh-mono" style="font-size: 12px;">prefers-reduced-motion</span> en todo.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-top: 6px;">
+    <p style="margin: 0; font-size: 13.5px; color: #A49B94; max-width: 640px; line-height: 1.6;">Los componentes construidos con estos tokens están en la tabla contigua. Debajo, las tres direcciones aplicadas al hero.</p>
+    <div class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.16em; color: #6E655F;">STRABAR · HOJA 1 DE 2</div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

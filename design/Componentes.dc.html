@@ -1,0 +1,405 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap">
+  <style>
+    body { margin: 0; background: #0D0907; }
+    a { color: #FF8068; text-decoration: none; }
+    a:hover { color: #FFAC9B; }
+    .sh-disp { font-family: "Bricolage Grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    .sh-body { font-family: "Instrument Sans", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .sh-mono { font-family: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace; }
+    .cmp-ico { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+    @keyframes livepulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: .35; transform: scale(.7); } }
+    .live-dot { animation: livepulse 1.8s cubic-bezier(.22,1,.36,1) infinite; }
+    @media (prefers-reduced-motion: reduce) { .live-dot { animation: none; } }
+  </style>
+</helmet>
+
+<div class="sh-body" style="background: #0D0907; color: #F7F4ED; padding: 64px 64px 88px; display: flex; flex-direction: column; gap: 56px; -webkit-font-smoothing: antialiased;">
+
+  <!-- CABECERA -->
+  <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 32px;">
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <div class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.18em; color: #A49B94;">HOJA DE DISEÑO · 2 DE 2</div>
+      <h1 class="sh-disp" style="margin: 0; font-size: 46px; font-weight: 800; letter-spacing: -0.03em; line-height: 1;">Componentes</h1>
+    </div>
+    <p style="margin: 0; max-width: 380px; font-size: 15px; line-height: 1.6; color: #A49B94;">Cada pieza usa solo los tokens de la hoja 1. Los estados se muestran en fila: reposo, hover, foco y deshabilitado.</p>
+  </div>
+
+  <div style="height: 1px; background: rgba(247,244,237,0.12);"></div>
+
+  <!-- 01 BOTONES -->
+  <div style="display: flex; flex-direction: column; gap: 24px;">
+    <div style="display: flex; align-items: baseline; gap: 16px;">
+      <span class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.18em; color: #FF4B2E;">01</span>
+      <h2 class="sh-disp" style="margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.02em;">Botones</h2>
+      <span style="font-size: 14px; color: #A49B94;">Altura 52 / 46 / 40. Tinta oscura sobre señal, siempre.</span>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px;">
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div class="sh-mono" style="font-size: 10.5px; font-weight: 700; letter-spacing: 0.16em; color: #6E655F;">REPOSO</div>
+        <div style="display: flex; height: 52px; align-items: center; justify-content: center; background: #FF4B2E; color: #0D0907; border-radius: 999px; font-weight: 600; font-size: 15.5px; box-shadow: 0 10px 34px rgba(255,75,46,0.32);">Probar la demo</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div class="sh-mono" style="font-size: 10.5px; font-weight: 700; letter-spacing: 0.16em; color: #6E655F;">HOVER</div>
+        <div style="display: flex; height: 52px; align-items: center; justify-content: center; background: #FF8068; color: #0D0907; border-radius: 999px; font-weight: 600; font-size: 15.5px; box-shadow: 0 16px 40px rgba(255,75,46,0.4); transform: translateY(-2px);">Probar la demo</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div class="sh-mono" style="font-size: 10.5px; font-weight: 700; letter-spacing: 0.16em; color: #6E655F;">FOCO (TECLADO)</div>
+        <div style="display: flex; height: 52px; align-items: center; justify-content: center; background: #FF4B2E; color: #0D0907; border-radius: 999px; font-weight: 600; font-size: 15.5px; box-shadow: 0 0 0 3px #0D0907, 0 0 0 5px #00B9CF;">Probar la demo</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div class="sh-mono" style="font-size: 10.5px; font-weight: 700; letter-spacing: 0.16em; color: #6E655F;">DESHABILITADO</div>
+        <div style="display: flex; height: 52px; align-items: center; justify-content: center; background: #2C2623; color: #6E655F; border-radius: 999px; font-weight: 600; font-size: 15.5px;">Probar la demo</div>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; align-items: end;">
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div class="sh-mono" style="font-size: 10.5px; font-weight: 700; letter-spacing: 0.16em; color: #6E655F;">SECUNDARIO</div>
+        <div style="display: flex; height: 52px; align-items: center; justify-content: center; gap: 10px; background: transparent; color: #F7F4ED; border: 1.5px solid rgba(247,244,237,0.18); border-radius: 999px; font-weight: 600; font-size: 15.5px;">
+          Cómo funciona
+          <svg class="cmp-ico" style="width: 18px; height: 18px;" viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div class="sh-mono" style="font-size: 10.5px; font-weight: 700; letter-spacing: 0.16em; color: #6E655F;">FANTASMA</div>
+        <div style="display: flex; height: 52px; align-items: center; justify-content: center; color: #C3BDB6; border-radius: 999px; font-weight: 600; font-size: 15.5px;">Ver todas las rutas</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div class="sh-mono" style="font-size: 10.5px; font-weight: 700; letter-spacing: 0.16em; color: #6E655F;">SOBRE PAPEL</div>
+        <div style="display: flex; height: 52px; align-items: center; justify-content: center; background: #1C130F; color: #FAF6EE; border-radius: 999px; font-weight: 600; font-size: 15.5px;">Probar la demo</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div class="sh-mono" style="font-size: 10.5px; font-weight: 700; letter-spacing: 0.16em; color: #6E655F;">EN LA APP · 52 PX</div>
+        <div style="display: flex; height: 52px; align-items: center; justify-content: center; gap: 10px; background: #FF4B2E; color: #0D0907; border-radius: 12px; font-weight: 700; font-size: 15.5px;">
+          <svg class="cmp-ico" style="width: 20px; height: 20px;" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9h9v9a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9z"></path><path d="M15 11h2a2 2 0 0 1 0 4h-2"></path><path d="M6 9V6a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v3"></path></svg>
+          Cerveza
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="height: 1px; background: rgba(247,244,237,0.12);"></div>
+
+  <!-- 02 ETIQUETAS -->
+  <div style="display: flex; flex-direction: column; gap: 24px;">
+    <div style="display: flex; align-items: baseline; gap: 16px;">
+      <span class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.18em; color: #FF4B2E;">02</span>
+      <h2 class="sh-disp" style="margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.02em;">Etiquetas, estados y campos</h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+      <div style="background: #16120F; border: 1px solid rgba(247,244,237,0.10); border-radius: 20px; padding: 26px; display: flex; flex-direction: column; gap: 20px;">
+        <div class="sh-mono" style="font-size: 10.5px; font-weight: 700; letter-spacing: 0.16em; color: #6E655F;">MARCADORES</div>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center;">
+          <span class="sh-mono" style="display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; letter-spacing: 0.16em; color: #FF8068;">
+            <span style="width: 6px; height: 6px; background: #FF4B2E; border-radius: 999px;"></span>EL CONCEPTO
+          </span>
+          <span class="sh-mono" style="display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: #0D0907; background: #00B9CF; padding: 7px 12px; border-radius: 999px;">
+            <span class="live-dot" style="width: 7px; height: 7px; background: #0D0907; border-radius: 999px;"></span>EN DIRECTO
+          </span>
+          <span class="sh-mono" style="display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: #C3BDB6; border: 1px solid rgba(247,244,237,0.18); padding: 6px 12px; border-radius: 999px;">GPS ACTIVO</span>
+          <span class="sh-mono" style="display: inline-flex; align-items: center; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: #FF8068; background: rgba(255,75,46,0.14); border: 1px solid rgba(255,75,46,0.30); padding: 6px 12px; border-radius: 999px;">COMUNIDAD</span>
+          <span class="sh-mono" style="display: inline-flex; align-items: center; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: #B9C9AE; background: rgba(185,201,174,0.12); padding: 6px 12px; border-radius: 999px;">ACTIVIDAD PRIVADA</span>
+        </div>
+
+        <div style="height: 1px; background: rgba(247,244,237,0.10);"></div>
+
+        <div class="sh-mono" style="font-size: 10.5px; font-weight: 700; letter-spacing: 0.16em; color: #6E655F;">FICHAS FLOTANTES</div>
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <div style="display: flex; align-items: center; gap: 12px; background: #201A18; border: 1px solid rgba(247,244,237,0.10); border-radius: 14px; padding: 12px 16px; box-shadow: inset 0 1px 0 rgba(247,244,237,0.05), 0 22px 54px rgba(0,0,0,0.6);">
+            <span style="display: flex; align-items: center; justify-content: center; width: 38px; height: 38px; border-radius: 10px; background: rgba(255,75,46,0.14); color: #FF8068;">
+              <svg class="cmp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2V6z"></path><line x1="9" y1="4" x2="9" y2="18"></line><line x1="15" y1="6" x2="15" y2="20"></line></svg>
+            </span>
+            <div style="display: flex; flex-direction: column; gap: 3px;">
+              <strong style="font-size: 14px; font-weight: 600;">Strabar en curso</strong>
+              <span class="sh-mono" style="font-size: 11.5px; color: #A49B94;">3 paradas · 00:42</span>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 12px; background: #201A18; border: 1px solid rgba(247,244,237,0.10); border-radius: 14px; padding: 12px 16px; box-shadow: inset 0 1px 0 rgba(247,244,237,0.05), 0 22px 54px rgba(0,0,0,0.6);">
+            <span style="display: flex; align-items: center; justify-content: center; width: 38px; height: 38px; border-radius: 10px; background: rgba(0,185,207,0.14); color: #00B9CF;">
+              <svg class="cmp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </span>
+            <div style="display: flex; flex-direction: column; gap: 3px;">
+              <strong style="font-size: 14px; font-weight: 600;">Beer pace</strong>
+              <span class="sh-mono" style="font-size: 11.5px; color: #A49B94;">&lt;1 min/beer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="background: #16120F; border: 1px solid rgba(247,244,237,0.10); border-radius: 20px; padding: 26px; display: flex; flex-direction: column; gap: 20px;">
+        <div class="sh-mono" style="font-size: 10.5px; font-weight: 700; letter-spacing: 0.16em; color: #6E655F;">CAMPOS · ALTURA 52</div>
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <label class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: #A49B94;">CORREO</label>
+          <div style="height: 52px; display: flex; align-items: center; padding: 0 16px; background: #2C2623; border: 1px solid rgba(247,244,237,0.10); border-radius: 12px; color: #6E655F; font-size: 15px;">tu@correo.com</div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <label class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: #A49B94;">CONTRASEÑA · FOCO</label>
+          <div style="height: 52px; display: flex; align-items: center; padding: 0 16px; background: #2C2623; border: 1px solid #00B9CF; border-radius: 12px; color: #F7F4ED; font-size: 15px; box-shadow: 0 0 0 3px rgba(0,185,207,0.22);">••••••••••</div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <label class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: #FF8068;">CORREO · ERROR</label>
+          <div style="height: 52px; display: flex; align-items: center; padding: 0 16px; background: #2C2623; border: 1px solid #FF6A5A; border-radius: 12px; color: #F7F4ED; font-size: 15px;">correo@</div>
+          <span style="font-size: 13px; color: #FF6A5A;">Falta el dominio después de la arroba.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="height: 1px; background: rgba(247,244,237,0.12);"></div>
+
+  <!-- 03 TARJETAS -->
+  <div style="display: flex; flex-direction: column; gap: 24px;">
+    <div style="display: flex; align-items: baseline; gap: 16px;">
+      <span class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.18em; color: #FF4B2E;">03</span>
+      <h2 class="sh-disp" style="margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.02em;">Tarjetas</h2>
+      <span style="font-size: 14px; color: #A49B94;">Radio 20, filete de 1 px, relleno 26.</span>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; align-items: start;">
+      <!-- valor -->
+      <div style="background: #16120F; border: 1px solid rgba(247,244,237,0.10); border-radius: 20px; padding: 26px; display: flex; flex-direction: column; gap: 14px;">
+        <span style="display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 12px; background: rgba(255,75,46,0.14); color: #FF8068;">
+          <svg class="cmp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+        </span>
+        <h3 class="sh-disp" style="margin: 0; font-size: 20px; font-weight: 700; letter-spacing: -0.015em; line-height: 1.2;">Marca cada parada</h3>
+        <p style="margin: 0; font-size: 14.5px; line-height: 1.6; color: #A49B94;">Anota los locales que visitas y lleva la cuenta de tu noche a tu manera.</p>
+        <div class="sh-mono" style="font-size: 10.5px; letter-spacing: 0.16em; color: #6E655F;">TARJETA · VALOR</div>
+      </div>
+      <!-- paso -->
+      <div style="background: #16120F; border: 1px solid rgba(247,244,237,0.10); border-radius: 20px; padding: 26px; display: flex; flex-direction: column; gap: 14px;">
+        <span class="sh-mono" style="display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 999px; border: 1.5px solid #FF4B2E; color: #FF8068; font-size: 16px; font-weight: 700;">02</span>
+        <h3 class="sh-disp" style="margin: 0; font-size: 20px; font-weight: 700; letter-spacing: -0.015em; line-height: 1.2;">Registra tu recorrido</h3>
+        <p style="margin: 0; font-size: 14.5px; line-height: 1.6; color: #A49B94;">El GPS traza tu ruta mientras tú te limitas a disfrutar de la noche.</p>
+        <div class="sh-mono" style="font-size: 10.5px; letter-spacing: 0.16em; color: #6E655F;">TARJETA · PASO</div>
+      </div>
+      <!-- dato -->
+      <div style="display: flex; flex-direction: column; gap: 18px;">
+        <div style="background: #201A18; border: 1px solid rgba(247,244,237,0.10); border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 8px;">
+          <div class="sh-mono" style="font-size: 34px; font-weight: 700; letter-spacing: -0.02em; line-height: 1; font-variant-numeric: tabular-nums;">42 km</div>
+          <div class="sh-mono" style="font-size: 10.5px; font-weight: 700; letter-spacing: 0.16em; color: #A49B94;">RUTAS ESTA SEMANA*</div>
+        </div>
+        <div style="background: #201A18; border: 1px solid rgba(247,244,237,0.10); border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 8px;">
+          <div class="sh-mono" style="font-size: 34px; font-weight: 700; letter-spacing: -0.02em; line-height: 1; font-variant-numeric: tabular-nums; color: #F2A93B;">312</div>
+          <div class="sh-mono" style="font-size: 10.5px; font-weight: 700; letter-spacing: 0.16em; color: #A49B94;">STRABARS DE LA COMUNIDAD*</div>
+        </div>
+        <div class="sh-mono" style="font-size: 10.5px; letter-spacing: 0.16em; color: #6E655F;">TARJETA · DATO</div>
+      </div>
+      <!-- feed -->
+      <div style="background: #16120F; border: 1px solid rgba(247,244,237,0.10); border-radius: 20px; padding: 22px; display: flex; gap: 14px;">
+        <span class="sh-disp" style="flex-shrink: 0; display: flex; align-items: center; justify-content: center; width: 42px; height: 42px; border-radius: 999px; background: #2C2623; color: #F7F4ED; font-size: 17px; font-weight: 700;">M</span>
+        <div style="display: flex; flex-direction: column; gap: 9px; min-width: 0;">
+          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">
+            <span style="font-size: 15px; font-weight: 600;">Marta R.</span>
+            <span class="sh-mono" style="font-size: 11px; color: #6E655F;">2 h</span>
+          </div>
+          <p style="margin: 0; font-size: 14px; line-height: 1.55; color: #A49B94;"><span class="sh-mono" style="font-size: 12.5px; color: #FF8068;">@marta.r</span> completó un Strabar de 5 paradas por el Raval.</p>
+          <div style="display: flex; gap: 16px;">
+            <span class="sh-mono" style="display: flex; flex-direction: column; gap: 2px; font-size: 15px; font-weight: 700; color: #F7F4ED;">5<span style="font-size: 10px; letter-spacing: 0.14em; font-weight: 700; color: #6E655F;">CERVEZAS</span></span>
+            <span class="sh-mono" style="display: flex; flex-direction: column; gap: 2px; font-size: 15px; font-weight: 700; color: #F7F4ED;">2,8 km<span style="font-size: 10px; letter-spacing: 0.14em; font-weight: 700; color: #6E655F;">DISTANCIA</span></span>
+          </div>
+          <div class="sh-mono" style="font-size: 10.5px; letter-spacing: 0.16em; color: #6E655F;">TARJETA · FEED</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="height: 1px; background: rgba(247,244,237,0.12);"></div>
+
+  <!-- 04 NAVEGACIÓN -->
+  <div style="display: flex; flex-direction: column; gap: 24px;">
+    <div style="display: flex; align-items: baseline; gap: 16px;">
+      <span class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.18em; color: #FF4B2E;">04</span>
+      <h2 class="sh-disp" style="margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.02em;">Navegación</h2>
+    </div>
+
+    <div style="background: rgba(13,9,7,0.85); border: 1px solid rgba(247,244,237,0.10); border-radius: 16px; padding: 0 26px; height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 24px;">
+      <div style="display: flex; align-items: center; gap: 11px;">
+        <svg width="26" height="26" viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M14,8 L34,8 Q40,8 40,14 L40,28 L26,42 Q24,45 22,42 L8,28 L8,14 Q8,8 14,8 Z" fill="none" stroke="#F7F4ED" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"></path>
+          <path d="M11,27 L37,27 L25,40 Q24,42 23,40 Z" fill="#FF4B2E" stroke="none"></path>
+        </svg>
+        <span class="sh-disp" style="font-size: 20px; font-weight: 800; letter-spacing: -0.03em;">Strabar</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 30px;">
+        <span style="font-size: 14.5px; font-weight: 500; color: #F7F4ED; border-bottom: 1.5px solid #FF4B2E; padding-bottom: 3px;">Cómo funciona</span>
+        <span style="font-size: 14.5px; font-weight: 500; color: #A49B94;">Explorar</span>
+        <span style="font-size: 14.5px; font-weight: 500; color: #A49B94;">Demo</span>
+        <span style="font-size: 14.5px; font-weight: 500; color: #A49B94;">Legal</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <span class="sh-mono" style="display: inline-flex; align-items: center; gap: 7px; font-size: 11.5px; font-weight: 700; letter-spacing: 0.1em; color: #C3BDB6; border: 1px solid rgba(247,244,237,0.18); padding: 8px 12px; border-radius: 999px;">
+          <svg class="cmp-ico" style="width: 15px; height: 15px;" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+          ES
+        </span>
+        <span style="display: flex; height: 40px; align-items: center; padding: 0 20px; background: #FF4B2E; color: #0D0907; border-radius: 999px; font-weight: 600; font-size: 14.5px;">Probar la demo</span>
+      </div>
+    </div>
+
+    <div style="display: flex; gap: 10px; align-items: center;">
+      <span class="sh-mono" style="display: flex; height: 44px; align-items: center; padding: 0 22px; border-radius: 999px; background: #FF4B2E; color: #0D0907; font-size: 12px; font-weight: 700; letter-spacing: 0.1em;">REGISTRAR UNA NOCHE</span>
+      <span class="sh-mono" style="display: flex; height: 44px; align-items: center; padding: 0 22px; border-radius: 999px; border: 1px solid rgba(247,244,237,0.18); color: #A49B94; font-size: 12px; font-weight: 700; letter-spacing: 0.1em;">VER AMIGOS</span>
+      <span style="font-size: 13.5px; color: #6E655F; margin-left: 10px;">Pestañas de la demo · el estado activo nunca es solo color: cambia también el peso y el fondo.</span>
+    </div>
+  </div>
+
+  <div style="height: 1px; background: rgba(247,244,237,0.12);"></div>
+
+  <!-- 05 APP + MAPA -->
+  <div style="display: flex; flex-direction: column; gap: 24px;">
+    <div style="display: flex; align-items: baseline; gap: 16px;">
+      <span class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.18em; color: #FF4B2E;">05</span>
+      <h2 class="sh-disp" style="margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.02em;">Pantalla y mapa</h2>
+      <span style="font-size: 14px; color: #A49B94;">Toda zona pulsable, 52 px de alto.</span>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 320px 1fr; gap: 32px; align-items: start;">
+      <!-- teléfono -->
+      <div style="background: #16120F; border: 1px solid rgba(247,244,237,0.14); border-radius: 34px; padding: 12px; box-shadow: inset 0 1px 0 rgba(247,244,237,0.06), 0 22px 54px rgba(0,0,0,0.6);">
+        <div style="background: #0D0907; border-radius: 24px; overflow: hidden; display: flex; flex-direction: column;">
+          <div style="display: flex; align-items: center; justify-content: space-between; padding: 18px 18px 14px;">
+            <span class="sh-mono" style="font-size: 12px; font-weight: 700; letter-spacing: 0.18em; color: #F7F4ED;">STRABAR</span>
+            <span class="sh-disp" style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 999px; background: #2C2623; font-size: 14px; font-weight: 700;">G</span>
+          </div>
+          <div style="padding: 0 18px 18px; display: flex; flex-direction: column; gap: 14px;">
+            <span class="sh-mono" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; font-size: 10.5px; font-weight: 700; letter-spacing: 0.14em; color: #0D0907; background: #00B9CF; padding: 6px 11px; border-radius: 999px;">
+              <span class="live-dot" style="width: 6px; height: 6px; background: #0D0907; border-radius: 999px;"></span>GPS ACTIVO
+            </span>
+            <div style="display: flex; flex-direction: column; gap: 5px;">
+              <div class="sh-mono" style="font-size: 38px; font-weight: 700; line-height: 1; letter-spacing: -0.02em; font-variant-numeric: tabular-nums;">00:24:18</div>
+              <div class="sh-mono" style="font-size: 10px; font-weight: 700; letter-spacing: 0.16em; color: #A49B94;">TIEMPO TRANSCURRIDO</div>
+            </div>
+            <div style="border-radius: 14px; overflow: hidden; border: 1px solid rgba(247,244,237,0.10);">
+              <svg viewBox="0 0 260 150" style="display: block; width: 100%; height: auto;" aria-hidden="true">
+                <rect x="0" y="0" width="260" height="150" fill="#171310"></rect>
+                <path d="M158,0 C176,14 196,10 214,26 C232,42 236,66 260,74 L260,0 Z" fill="#172418"></path>
+                <path d="M0,126 C22,120 44,132 66,150 L0,150 Z" fill="#0E2530"></path>
+                <g stroke="#27211D" stroke-width="7" stroke-linecap="round">
+                  <line x1="46" y1="-10" x2="46" y2="160"></line>
+                  <line x1="128" y1="-10" x2="128" y2="160"></line>
+                  <line x1="204" y1="-10" x2="204" y2="160"></line>
+                  <line x1="-10" y1="42" x2="270" y2="42"></line>
+                  <line x1="-10" y1="98" x2="270" y2="98"></line>
+                </g>
+                <path d="M46,132 L46,98 L128,98 L128,42 L204,42" fill="none" stroke="#0D0907" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M46,132 L46,98 L128,98 L128,42 L204,42" fill="none" stroke="#00B9CF" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g fill="#FF4B2E">
+                  <circle cx="46" cy="132" r="6"></circle>
+                  <circle cx="128" cy="98" r="6"></circle>
+                  <circle cx="204" cy="42" r="6"></circle>
+                </g>
+                <g fill="none" stroke="#0D0907" stroke-width="2">
+                  <circle cx="46" cy="132" r="6"></circle>
+                  <circle cx="128" cy="98" r="6"></circle>
+                  <circle cx="204" cy="42" r="6"></circle>
+                </g>
+              </svg>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+              <div style="background: #201A18; border-radius: 12px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px;">
+                <span class="sh-mono" style="font-size: 17px; font-weight: 700; font-variant-numeric: tabular-nums;">1,8 km</span>
+                <span class="sh-mono" style="font-size: 9.5px; font-weight: 700; letter-spacing: 0.14em; color: #A49B94;">DISTANCIA</span>
+              </div>
+              <div style="background: #201A18; border-radius: 12px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px;">
+                <span class="sh-mono" style="font-size: 17px; font-weight: 700; font-variant-numeric: tabular-nums;">4</span>
+                <span class="sh-mono" style="font-size: 9.5px; font-weight: 700; letter-spacing: 0.14em; color: #A49B94;">CERVEZAS</span>
+              </div>
+            </div>
+            <div style="height: 52px; display: flex; align-items: center; justify-content: center; gap: 10px; background: #FF4B2E; color: #0D0907; border-radius: 12px; font-weight: 700; font-size: 15px;">
+              <svg class="cmp-ico" style="width: 20px; height: 20px;" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9h9v9a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9z"></path><path d="M15 11h2a2 2 0 0 1 0 4h-2"></path><path d="M6 9V6a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v3"></path></svg>
+              Cerveza
+            </div>
+          </div>
+          <div style="display: flex; justify-content: space-around; align-items: center; height: 62px; border-top: 1px solid rgba(247,244,237,0.10);">
+            <span style="color: #6E655F;"><svg class="cmp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5L12 3l9 7.5"></path><path d="M5 9.5V21h14V9.5"></path></svg></span>
+            <span style="display: flex; align-items: center; justify-content: center; width: 46px; height: 46px; border-radius: 999px; background: rgba(255,75,46,0.16); color: #FF4B2E;"><svg class="cmp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="3"></circle></svg></span>
+            <span style="color: #6E655F;"><svg class="cmp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21a8 8 0 0 1 16 0"></path></svg></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- mapa grande + leyenda + iconos -->
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <div style="border: 1px solid rgba(247,244,237,0.10); border-radius: 20px; overflow: hidden;">
+          <svg viewBox="0 0 760 300" style="display: block; width: 100%; height: auto;" aria-hidden="true">
+            <rect x="0" y="0" width="760" height="300" fill="#171310"></rect>
+            <path d="M30,18 C90,0 160,24 164,66 C168,110 112,140 66,126 C24,114 6,72 18,42 Z" fill="#172418"></path>
+            <path d="M760,196 C708,182 634,214 616,258 C606,282 620,300 640,300 L760,300 Z" fill="#0E2530"></path>
+            <g stroke="#27211D" stroke-width="9" stroke-linecap="round">
+              <line x1="88" y1="-10" x2="88" y2="310"></line>
+              <line x1="204" y1="-10" x2="204" y2="310"></line>
+              <line x1="342" y1="-10" x2="342" y2="310"></line>
+              <line x1="482" y1="-10" x2="482" y2="310"></line>
+              <line x1="596" y1="-10" x2="596" y2="310"></line>
+              <line x1="-10" y1="48" x2="770" y2="48"></line>
+              <line x1="-10" y1="116" x2="770" y2="116"></line>
+              <line x1="-10" y1="188" x2="770" y2="188"></line>
+              <line x1="-10" y1="256" x2="770" y2="256"></line>
+            </g>
+            <g stroke="#332B26" stroke-width="14" stroke-linecap="round">
+              <line x1="342" y1="-10" x2="342" y2="310"></line>
+              <line x1="-10" y1="188" x2="770" y2="188"></line>
+            </g>
+            <path d="M88,256 L88,188 L204,188 L204,116 L342,116 L342,48 L482,48" fill="none" stroke="#0D0907" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M88,256 L88,188 L204,188 L204,116 L342,116 L342,48 L482,48" fill="none" stroke="#00B9CF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
+            <g>
+              <circle cx="204" cy="188" r="34" fill="#FF4B2E" opacity="0.14"></circle>
+              <circle cx="204" cy="188" r="20" fill="#FF4B2E" opacity="0.18"></circle>
+            </g>
+            <g fill="#FF4B2E" stroke="#0D0907" stroke-width="2.5">
+              <circle cx="88" cy="256" r="9"></circle>
+              <circle cx="204" cy="188" r="11"></circle>
+              <circle cx="342" cy="116" r="9"></circle>
+              <circle cx="482" cy="48" r="9"></circle>
+            </g>
+          </svg>
+        </div>
+        <div style="display: flex; gap: 26px; flex-wrap: wrap; align-items: center;">
+          <span class="sh-mono" style="display: inline-flex; align-items: center; gap: 9px; font-size: 11.5px; font-weight: 700; letter-spacing: 0.1em; color: #A49B94;"><span style="width: 22px; height: 4px; border-radius: 999px; background: #00B9CF;"></span>RUTA REGISTRADA</span>
+          <span class="sh-mono" style="display: inline-flex; align-items: center; gap: 9px; font-size: 11.5px; font-weight: 700; letter-spacing: 0.1em; color: #A49B94;"><span style="width: 12px; height: 12px; border-radius: 999px; background: #FF4B2E;"></span>PARADA</span>
+          <span class="sh-mono" style="display: inline-flex; align-items: center; gap: 9px; font-size: 11.5px; font-weight: 700; letter-spacing: 0.1em; color: #A49B94;"><span style="width: 16px; height: 16px; border-radius: 999px; background: rgba(255,75,46,0.28);"></span>ZONA CON MÁS ACTIVIDAD</span>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <div class="sh-mono" style="font-size: 10.5px; font-weight: 700; letter-spacing: 0.16em; color: #6E655F;">ICONOS · REJILLA 24, TRAZO 1.75, EXTREMOS REDONDOS</div>
+          <div style="display: flex; gap: 22px; flex-wrap: wrap; color: #C3BDB6;">
+            <svg class="cmp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2V6z"></path><line x1="9" y1="4" x2="9" y2="18"></line><line x1="15" y1="6" x2="15" y2="20"></line></svg>
+            <svg class="cmp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+            <svg class="cmp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9h9v9a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9z"></path><path d="M15 11h2a2 2 0 0 1 0 4h-2"></path><path d="M6 9V6a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v3"></path></svg>
+            <svg class="cmp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"></path><circle cx="10" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            <svg class="cmp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.6" y1="10.5" x2="15.4" y2="6.5"></line><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"></line></svg>
+            <svg class="cmp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <svg class="cmp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="3"></circle></svg>
+            <svg class="cmp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5L12 3l9 7.5"></path><path d="M5 9.5V21h14V9.5"></path></svg>
+            <svg class="cmp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21a8 8 0 0 1 16 0"></path></svg>
+            <svg class="cmp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+            <svg class="cmp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            <svg class="cmp-ico" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <svg class="cmp-ico" viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            <svg class="cmp-ico" viewBox="0 0 24 24" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </div>
+          <p style="margin: 0; font-size: 13.5px; line-height: 1.6; color: #A49B94;">El juego actual se conserva íntegro: solo baja el trazo de 2 a 1.75 para que respire junto a la nueva tipografía. El escudo de la marca mantiene su trazo de 5 sobre lienzo 48.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-top: 6px;">
+    <p style="margin: 0; font-size: 13.5px; color: #A49B94; max-width: 700px; line-height: 1.6;">*Las cifras que aparecen aquí son las de muestra que ya usa el sitio; siguen marcadas como ejemplo allá donde se publiquen.</p>
+    <div class="sh-mono" style="font-size: 11px; font-weight: 700; letter-spacing: 0.16em; color: #6E655F;">STRABAR · HOJA 2 DE 2</div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

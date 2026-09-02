@@ -1,0 +1,14 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html", "x": 0, "y": 0, "w": 1240, "h": 3400, "title": "Hoja 1 · Fundamentos", "print": "flow" },
+    { "file": "Componentes.dc.html", "x": 1360, "y": 0, "w": 1240, "h": 3300, "title": "Hoja 2 · Componentes", "print": "flow" },
+    { "file": "Noche.dc.html", "x": 0, "y": 3720, "w": 1440, "h": 900, "title": "Dirección A · Noche" },
+    { "file": "Papel.dc.html", "x": 1560, "y": 3720, "w": 1440, "h": 900, "title": "Dirección B · Papel" },
+    { "file": "Cartografia.dc.html", "x": 3120, "y": 3720, "w": 1440, "h": 900, "title": "Dirección C · Cartografía" }
+  ],
+  "annotations": [
+    { "id": "brief", "x": 0, "y": -190, "w": 620, "text": "HOJA DE DISEÑO — REDISEÑO DE LA LANDING\n\nLa marca no se toca: el rojo señal #FF4B2E y la calidez siguen siendo Strabar. Lo que cambia es el lienzo (del papel crema a la noche), la tipografía (fuera Inter) y el contraste del botón principal, que hoy no pasa AA.\n\nLas dos hojas documentan la dirección A. Abajo, las tres direcciones aplicadas al mismo hero." },
+    { "id": "direcciones", "x": 0, "y": 3480, "w": 640, "text": "TRES DIRECCIONES, MISMA COPY\n\nMisma estructura y mismos textos reales del sitio en las tres, para que la única variable sea la estética. Dime cuál y termino la hoja para esa; luego la llevo al código." }
+  ],
+  "launch": { "view": "canvas" }
+}
