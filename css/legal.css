@@ -179,7 +179,8 @@
   max-width: 74ch;
 }
 
-.legal-doc ul {
+.legal-doc ul,
+.legal-doc ol {
   margin-top: 0.6rem;
   display: flex;
   flex-direction: column;
@@ -187,11 +188,19 @@
   padding-left: 1.1rem;
 }
 
-.legal-doc ul li {
-  list-style: disc;
+.legal-doc ul li,
+.legal-doc ol li {
   font-size: 0.95rem;
   color: var(--color-ink-soft);
   max-width: 74ch;
+}
+
+.legal-doc ul li {
+  list-style: disc;
+}
+
+.legal-doc ol li {
+  list-style: decimal;
 }
 
 .legal-doc strong {

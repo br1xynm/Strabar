@@ -144,6 +144,7 @@
       "footer.privacy": "Política de privacidad",
       "footer.cookies": "Política de cookies",
       "footer.terms": "Términos y condiciones",
+      "footer.support": "Soporte",
       "footer.cookiePrefs": "Preferencias de cookies",
       "footer.copyright": "© 2026 Strabar. Todos los derechos reservados.",
 
@@ -184,6 +185,7 @@
       "legal.tabPrivacy": "Privacidad",
       "legal.tabCookies": "Cookies",
       "legal.tabTerms": "Términos",
+      "legal.tabSupport": "Soporte",
       "legal.backToTop": "Volver arriba",
     },
 
@@ -317,6 +319,7 @@
       "footer.privacy": "Política de privacitat",
       "footer.cookies": "Política de cookies",
       "footer.terms": "Termes i condicions",
+      "footer.support": "Suport",
       "footer.cookiePrefs": "Preferències de cookies",
       "footer.copyright": "© 2026 Strabar. Tots els drets reservats.",
 
@@ -357,6 +360,7 @@
       "legal.tabPrivacy": "Privacitat",
       "legal.tabCookies": "Cookies",
       "legal.tabTerms": "Termes",
+      "legal.tabSupport": "Suport",
       "legal.backToTop": "Tornar amunt",
     },
 
@@ -490,6 +494,7 @@
       "footer.privacy": "Privacy Policy",
       "footer.cookies": "Cookie Policy",
       "footer.terms": "Terms of Use",
+      "footer.support": "Support",
       "footer.cookiePrefs": "Cookie preferences",
       "footer.copyright": "© 2026 Strabar. All rights reserved.",
 
@@ -529,6 +534,7 @@
       "legal.tabPrivacy": "Privacy",
       "legal.tabCookies": "Cookies",
       "legal.tabTerms": "Terms",
+      "legal.tabSupport": "Support",
       "legal.backToTop": "Back to top",
     },
   };
